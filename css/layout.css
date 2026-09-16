@@ -1,0 +1,101 @@
+/* ==========================================================================
+   layout.css - containers, section wrappers, page rhythm
+   Bootstrap supplies the grid (row / col-*). This file supplies the shell.
+   ========================================================================== */
+
+.container {
+  --bs-gutter-x: 2.5rem;
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: calc(var(--bs-gutter-x) * 0.5);
+}
+
+/* Bootstrap steps its container width per breakpoint. We keep the steps but
+   raise the ceiling so the page lands on exactly 1200px. */
+@media (min-width: 1200px) {
+  .container {
+    max-width: var(--container);
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    --bs-gutter-x: 3rem;
+    max-width: var(--container);
+  }
+}
+
+/* Header sentinel --------------------------------------------------------
+   A 1px marker sitting in normal flow directly above the sticky header.
+   navigation.js observes it, so the header's border appears at the exact
+   moment the header pins. margin-bottom cancels its layout height. */
+.scroll-sentinel {
+  height: 1px;
+  margin-bottom: -1px;
+}
+
+/* Sections --------------------------------------------------------------- */
+
+.section {
+  position: relative;
+  padding-block: var(--section-y);
+  border-top: 1px solid var(--line);
+}
+
+.section--tight {
+  padding-block: var(--section-y-tight);
+}
+
+/* Stacked section header. Heading on top, lede directly under it, both left
+   aligned. No split-header, no floating corner paragraph. */
+.section-head {
+  max-width: var(--measure);
+}
+
+.section-head__title {
+  font-size: var(--fs-display-2);
+  letter-spacing: var(--tracking-heading);
+  line-height: var(--lh-heading);
+}
+
+/* The measured size steps below the loudest heading: 36px for "Sponsored by",
+   60px for the mid-weight section heads. */
+.section-head__title--sm {
+  font-size: var(--fs-display-4);
+}
+
+.section-head__title--md {
+  font-size: var(--fs-display-3);
+}
+
+.section-head__lede {
+  margin-top: var(--space-4);
+  max-width: var(--measure-muted);
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+/* Grid helpers ----------------------------------------------------------- */
+
+/* Bootstrap rows default to a 24px gutter through --bs-gutter-x. Narrow it on
+   dense grids so card rhythm stays tighter than the page gutter. */
+.grid-tight {
+  --bs-gutter-x: 1.25rem;
+  --bs-gutter-y: 1.25rem;
+}
+
+.grid-regular {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
+}
+
+.grid-wide {
+  --bs-gutter-x: 2.5rem;
+  --bs-gutter-y: 2.5rem;
+}
+
+/* Utility spacing used by section markup instead of inline styles. */
+.mt-8 {
+  margin-top: var(--space-8);
+}

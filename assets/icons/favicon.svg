@@ -1,0 +1,13 @@
+<!--
+  Tab icon for the reproduction. Same mark as the header wordmark, drawn on the
+  page background so it stays legible on both light and dark browser chrome.
+  An SVG favicon cannot read CSS custom properties, so the tokens are repeated
+  here as literal values:
+    background #0B0A0A (--bg)   outline #F5F2EC (--text)   core #FF6B35 (--accent)
+  If you re-skin the page, update these three values too.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Taste Skill">
+  <rect width="32" height="32" rx="7" fill="#0b0a0a"/>
+  <rect x="5.25" y="5.25" width="21.5" height="21.5" rx="5" fill="none" stroke="#f5f2ec" stroke-width="1.6"/>
+  <rect x="11.5" y="11.5" width="9" height="9" rx="2" fill="#ff6b35"/>
+</svg>

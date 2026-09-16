@@ -1,0 +1,3242 @@
+{
+  "meta": {
+    "generated_at": "2026-09-13T18:30:46+00:00",
+    "site_mode": "personal",
+    "source": "portfolio-akbar (Laravel) — seeded content snapshot",
+    "variant_note": "Project/service strings are baked into the database at SEED time by Site::isCompany(). To switch variants, re-run `php artisan db:seed` with SITE_MODE=personal or SITE_MODE=company set, then export again."
+  },
+  "site_identity": {
+    "name": "akbar.dev",
+    "full_name": "Mohammed Akbar Hossen",
+    "initials": "MA",
+    "tagline": "Laravel & Backend Developer",
+    "email": "mdakbar758742@gmail.com",
+    "phone": "+8801814758742",
+    "location": "Feni, Bangladesh",
+    "hero_badge": "Accepting new projects",
+    "hero_title": "We design and build software that ships.",
+    "roles_line": "Web applications · SaaS platforms · API integrations",
+    "hero_lead": "Xevrilon is a small senior team building web platforms, SaaS products and internal tools — engineered carefully, shipped on time.",
+    "about_heading": "Engineering that ships",
+    "about_text": "",
+    "footer_about": "Xevrilon is a Bangladesh-based software studio building web platforms, SaaS products and internal tools for teams at home and abroad.",
+    "cta_note": "Tell us what you are building — we will reply within 24 hours with honest feedback, a rough estimate and a clear next step.",
+    "github_org": ""
+  },
+  "profile": {
+    "id": 1,
+    "name": "Mohammed Akbar Hossen",
+    "initials": "MA",
+    "tagline": "Laravel & Backend Developer",
+    "brand_domain": "akbar.dev",
+    "hero_title": "Hi, I'm Mohammed Akbar Hossen",
+    "hero_roles": [
+      "Laravel & Backend Developer",
+      "Full-stack Laravel Developer",
+      "REST API Developer",
+      "Ecommerce Platform Builder"
+    ],
+    "hero_description": "Full-stack Laravel developer and final-year Computer Science and Engineering student. Contributed to company products spanning multi-vendor e-commerce, headless storefronts, delivery logistics, subscription commerce, job platforms, healthcare directories, and education portals. Comfortable owning a feature from database schema through API design to a production-ready frontend.",
+    "availability_badge": "Available for freelance — Q3 2026",
+    "availability_text": "Currently booking 2 project slots for Q3 2026. Discovery calls are free and genuinely useful — even if we never work together.",
+    "resume_file": "uploads/portfolio/akbar-cv.pdf",
+    "avatar": "/uploads/portfolio/avatar.svg",
+    "bio_image": "/uploads/portfolio/bio.svg",
+    "bio_heading": "From database schema to production frontend",
+    "bio_text": "<p>I'm a full-stack Laravel developer and final-year CSE student (Feni University, CGPA 3.60) who has contributed as part of the BugBuild product team to a portfolio of live Laravel products.</p><p>I design and implement RESTful APIs — including a versioned v10 API — consumed by both server-rendered Laravel apps and a separate Next.js storefront. My work spans seller, inventory, warehouse, order, payment, wallet and finance workflows, plus authentication flows (OTP, social login, Google reCAPTCHA) with both session- and token-based approaches.</p><p>Currently expanding expertise in scalable software architecture, system design, DevOps fundamentals, AI/ML, and application security — with a particular interest in combining software engineering and artificial intelligence to solve practical, real-world problems.</p>",
+    "objective": "To build scalable, AI-augmented web products where sound architecture, clean APIs and practical ML combine to solve real business problems.",
+    "mission": "Own features end-to-end — from schema and business logic to API and UI — and ship maintainable products.",
+    "vision": "Combine software engineering and artificial intelligence to build practical, secure, and scalable web solutions.",
+    "status_project": "Thesis: AI-Powered Multi-Vendor E-Commerce System — In Development",
+    "contact_email": "mdakbar758742@gmail.com",
+    "contact_phone": "+8801814758742",
+    "contact_phone_display": "+880 1814-758-742",
+    "location": "Feni, Bangladesh",
+    "location_coords": "23.0167° N, 91.4000° E",
+    "work_hours": "Mon–Fri, 10:00–19:00 (GMT+6)",
+    "timezone": "UTC+6",
+    "social_github": "https://github.com/Akbar758742",
+    "social_linkedin": "https://linkedin.com/in/akbar",
+    "social_facebook": "https://facebook.com/akbar",
+    "social_x": "https://x.com/akbar",
+    "languages": [
+      {
+        "name": "Bengali",
+        "label": "Native",
+        "level": 100
+      },
+      {
+        "name": "English",
+        "label": "Fluent · C1",
+        "level": 90
+      },
+      {
+        "name": "Hindi / Urdu",
+        "label": "Conversational",
+        "level": 70
+      },
+      {
+        "name": "Arabic",
+        "label": "Basic",
+        "level": 35
+      }
+    ],
+    "interests": [
+      {
+        "icon": "bi-book",
+        "label": "Systems design books"
+      },
+      {
+        "icon": "bi-camera",
+        "label": "Street photography"
+      },
+      {
+        "icon": "bi-cup-hot",
+        "label": "Third-wave coffee"
+      },
+      {
+        "icon": "bi-controller",
+        "label": "Indie games"
+      },
+      {
+        "icon": "bi-bicycle",
+        "label": "Cycling"
+      },
+      {
+        "icon": "bi-journal-code",
+        "label": "Reading RFCs (yes, really)"
+      },
+      {
+        "icon": "bi-music-note-beamed",
+        "label": "Lo-fi while coding"
+      }
+    ],
+    "fun_facts": [
+      "Final-year CSE student — thesis on AI-powered multi-vendor e-commerce.",
+      "Contributed to 7 live company products at BugBuild.",
+      "Comfortable debugging across Laravel, PHP, DB, deployment & environment layers.",
+      "Exploring scam/spam/malicious content detection with ML."
+    ],
+    "quick_stats": [
+      {
+        "label": "company products contributed",
+        "value": 7,
+        "suffix": "+"
+      },
+      {
+        "label": "industry verticals",
+        "value": 7,
+        "suffix": ""
+      },
+      {
+        "label": "connected commerce apps (Laravel + Next.js)",
+        "value": 2,
+        "suffix": ""
+      },
+      {
+        "label": "thesis: AI e-commerce",
+        "value": 1,
+        "suffix": ""
+      }
+    ],
+    "current_focus": [
+      {
+        "body": "<strong>AI-Powered Multi-Vendor E-Commerce</strong> — personalized recommendations, dynamic pricing, AI-driven customer assistance, and ML-based detection of scams/spam/vulnerabilities.",
+        "icon": "bi-hammer",
+        "tone": "primary",
+        "badge": "Thesis",
+        "title": "Current Focus",
+        "progress": 65,
+        "badge_tone": "primary"
+      },
+      {
+        "icon": "bi-book-half",
+        "tone": "accent",
+        "badge": "Learning",
+        "items": [
+          "Scalable software architecture & system design",
+          "DevOps fundamentals & VPS/Linux",
+          "AI/ML, LLMs & application security"
+        ],
+        "title": "Currently Learning",
+        "badge_tone": "accent"
+      },
+      {
+        "icon": "bi-signpost-2",
+        "tone": "warning",
+        "badge": "2026",
+        "items": [
+          {
+            "text": "Complete thesis MVP + recommendation engine",
+            "tone": "success",
+            "quarter": "Q1"
+          },
+          {
+            "text": "Dynamic pricing & AI assistant integration",
+            "tone": "primary",
+            "quarter": "Q2"
+          },
+          {
+            "text": "ML detection for scams/spam/vulnerabilities",
+            "tone": "accent",
+            "quarter": "Q3"
+          },
+          {
+            "text": "Graduate B.Sc. CSE (Feni University)",
+            "tone": "warning",
+            "quarter": "Q4"
+          }
+        ],
+        "title": "Roadmap",
+        "badge_tone": "warning"
+      },
+      {
+        "icon": "bi-trophy",
+        "tone": "danger",
+        "badge": null,
+        "items": [
+          "Build scalable AI-augmented commerce platforms",
+          "Deepen system design & DevOps expertise",
+          "Ship AI tools that solve practical problems"
+        ],
+        "title": "Future Goals",
+        "badge_tone": null
+      },
+      {
+        "icon": "bi-tools",
+        "tone": "primary",
+        "badge": null,
+        "chips": [
+          "VS Code",
+          "Git/GitHub",
+          "Postman",
+          "npm",
+          "Vite",
+          "SSH",
+          "Linux/VPS"
+        ],
+        "title": "Tools I Use Daily",
+        "badge_tone": null
+      },
+      {
+        "icon": "bi-heart-fill",
+        "tone": "success",
+        "badge": null,
+        "chips": [
+          {
+            "icon": "bi-braces",
+            "label": "Laravel"
+          },
+          {
+            "icon": "bi-stars",
+            "label": "OpenAI"
+          },
+          {
+            "icon": "bi-cpu",
+            "label": "Redis"
+          },
+          {
+            "icon": "bi-database-fill",
+            "label": "MySQL"
+          },
+          {
+            "icon": "bi-box-seam",
+            "label": "Next.js"
+          }
+        ],
+        "title": "Favorite Technologies",
+        "badge_tone": null
+      }
+    ],
+    "roadmap": null,
+    "future_goals": null,
+    "daily_tools": null,
+    "favorite_tech": null,
+    "process_steps": [
+      {
+        "icon": "bi-search",
+        "step": "STEP 01",
+        "title": "Requirement Analysis"
+      },
+      {
+        "icon": "bi-map",
+        "step": "STEP 02",
+        "title": "Planning"
+      },
+      {
+        "icon": "bi-diagram-3",
+        "step": "STEP 03",
+        "title": "Architecture"
+      },
+      {
+        "icon": "bi-database",
+        "step": "STEP 04",
+        "title": "Database Design"
+      },
+      {
+        "icon": "bi-code-slash",
+        "step": "STEP 05",
+        "title": "Development"
+      },
+      {
+        "icon": "bi-bug",
+        "step": "STEP 06",
+        "title": "Testing"
+      },
+      {
+        "icon": "bi-cloud-upload",
+        "step": "STEP 07",
+        "title": "Deployment"
+      },
+      {
+        "icon": "bi-heart-pulse",
+        "step": "STEP 08",
+        "title": "Maintenance"
+      }
+    ],
+    "tech_stack_groups": [
+      {
+        "icon": "bi-braces-asterisk",
+        "tone": "primary",
+        "chips": [
+          "PHP",
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "SQL"
+        ],
+        "title": "Languages"
+      },
+      {
+        "icon": "bi-grid-1x2",
+        "tone": "accent",
+        "chips": [
+          "Laravel",
+          "Livewire",
+          "React",
+          "Next.js",
+          "Bootstrap",
+          "Tailwind CSS"
+        ],
+        "title": "Frameworks"
+      },
+      {
+        "icon": "bi-database-fill",
+        "tone": "success",
+        "chips": [
+          "MySQL",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis"
+        ],
+        "title": "Databases"
+      },
+      {
+        "icon": "bi-box-seam",
+        "tone": "warning",
+        "chips": [
+          "Git/GitHub",
+          "npm",
+          "Vite",
+          "VS Code",
+          "Postman",
+          "SSH",
+          "Linux/VPS"
+        ],
+        "title": "Tools & Workflow"
+      },
+      {
+        "icon": "bi-robot",
+        "tone": "danger",
+        "chips": [
+          "Python",
+          "Machine Learning",
+          "OpenAI/LLM",
+          "HuggingFace",
+          "Recommendation Systems",
+          "TensorFlow"
+        ],
+        "title": "AI / ML"
+      }
+    ],
+    "pinned_repos": [
+      {
+        "name": "Graphics-Opengl",
+        "forks": "0",
+        "stars": "0",
+        "language": "C",
+        "description": ""
+      },
+      {
+        "name": "practice-blog-site",
+        "forks": "0",
+        "stars": "0",
+        "language": "JavaScript",
+        "description": ""
+      },
+      {
+        "name": "Blog-site",
+        "forks": "0",
+        "stars": "0",
+        "language": "HTML",
+        "description": ""
+      },
+      {
+        "name": "repository-pattern-in-laravel",
+        "forks": "0",
+        "stars": "0",
+        "language": "PHP",
+        "description": ""
+      },
+      {
+        "name": "ecom-project",
+        "forks": "0",
+        "stars": "0",
+        "language": "CSS",
+        "description": ""
+      },
+      {
+        "name": "defang-flask",
+        "forks": "0",
+        "stars": "0",
+        "language": "Python",
+        "description": ""
+      }
+    ],
+    "contrib_count": 0,
+    "seo_title": "Mohammed Akbar Hossen — Laravel & Backend Developer",
+    "seo_description": "Full-stack Laravel developer (BugBuild) & final-year CSE student. Building multi-vendor e-commerce, logistics, SaaS & AI-powered platforms.",
+    "meta_keywords": "Mohammed Akbar Hossen, Laravel Developer, Backend Developer, PHP, REST API, Next.js, Feni, BugBuild, AI Ecommerce",
+    "is_active": true,
+    "created_at": "2026-09-13T16:08:09.000000Z",
+    "updated_at": "2026-09-13T18:30:45.000000Z"
+  },
+  "quick_stats": [
+    {
+      "label": "company products contributed",
+      "value": 7,
+      "suffix": "+"
+    },
+    {
+      "label": "industry verticals",
+      "value": 7,
+      "suffix": ""
+    },
+    {
+      "label": "connected commerce apps (Laravel + Next.js)",
+      "value": 2,
+      "suffix": ""
+    },
+    {
+      "label": "thesis: AI e-commerce",
+      "value": 1,
+      "suffix": ""
+    }
+  ],
+  "stats": [
+    {
+      "id": 1,
+      "label": "Projects Completed",
+      "value": 120,
+      "suffix": "+",
+      "section": "home",
+      "sort_order": 1,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 2,
+      "label": "Repositories",
+      "value": 85,
+      "suffix": "",
+      "section": "home",
+      "sort_order": 2,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 3,
+      "label": "Technologies",
+      "value": 32,
+      "suffix": "",
+      "section": "home",
+      "sort_order": 3,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 4,
+      "label": "Years Experience",
+      "value": 6,
+      "suffix": "+",
+      "section": "home",
+      "sort_order": 4,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 5,
+      "label": "Happy Clients",
+      "value": 40,
+      "suffix": "+",
+      "section": "home",
+      "sort_order": 5,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 6,
+      "label": "Certificates",
+      "value": 12,
+      "suffix": "",
+      "section": "home",
+      "sort_order": 6,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    }
+  ],
+  "skill_groups": [
+    {
+      "name": "Backend",
+      "slug": "backend",
+      "icon": "bi-braces",
+      "skills": [
+        {
+          "id": 1,
+          "skill_group_id": 1,
+          "name": "PHP",
+          "icon": "bi-filetype-php",
+          "level": 95,
+          "description": "Core language for Laravel products — business logic & MVC architecture.",
+          "sort_order": 0,
+          "created_at": "2026-09-13T16:08:09.000000Z",
+          "updated_at": "2026-09-13T16:08:09.000000Z"
+        },
+        {
+          "id": 2,
+          "skill_group_id": 1,
+          "name": "Laravel",
+          "icon": "bi-braces",
+          "level": 94,
+          "description": "Full-stack framework — Eloquent, queues, events, multi-vendor domains.",
+          "sort_order": 1,
+          "created_at": "2026-09-13T16:08:09.000000Z",
+          "updated_at": "2026-09-13T16:08:09.000000Z"
+        },
+        {
+          "id": 3,
+          "skill_group_id": 1,
+          "name": "Livewire",
+          "icon": "bi-lightning",
+          "level": 90,
+          "description": "Dynamic Laravel UIs without separate SPA.",
+          "sort_order": 2,
+          "created_at": "2026-09-13T16:08:09.000000Z",
+          "updated_at": "2026-09-13T16:08:09.000000Z"
+        },
+        {
+          "id": 4,
+          "skill_group_id": 1,
+          "name": "REST API Development",
+          "icon": "bi-plug",
+          "level": 93,
+          "description": "Versioned v10 API consumed by Laravel apps & Next.js storefront.",
+          "sort_order": 3,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 5,
+          "skill_group_id": 1,
+          "name": "MVC Architecture",
+          "icon": "bi-layers",
+          "level": 90,
+          "description": "Clean separation of controllers, services and views.",
+          "sort_order": 4,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 6,
+          "skill_group_id": 1,
+          "name": "Repository Pattern",
+          "icon": "bi-diagram-3",
+          "level": 88,
+          "description": "Abstraction layer for data access & testability.",
+          "sort_order": 5,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 7,
+          "skill_group_id": 1,
+          "name": "Sanctum / Passport",
+          "icon": "bi-shield-lock",
+          "level": 89,
+          "description": "Session- and token-based auth — OTP, social login, reCAPTCHA.",
+          "sort_order": 6,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 8,
+          "skill_group_id": 1,
+          "name": "Redis & Queues",
+          "icon": "bi-cpu",
+          "level": 91,
+          "description": "Caching, Horizon queues, background pipelines.",
+          "sort_order": 7,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 9,
+          "skill_group_id": 1,
+          "name": "Business Logic Design",
+          "icon": "bi-gear",
+          "level": 88,
+          "description": "Seller, order, payment, wallet & finance workflows.",
+          "sort_order": 8,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 10,
+          "skill_group_id": 1,
+          "name": "Database Design",
+          "icon": "bi-database",
+          "level": 90,
+          "description": "Schema design for commerce, logistics & marketplace domains.",
+          "sort_order": 9,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        }
+      ]
+    },
+    {
+      "name": "Frontend",
+      "slug": "frontend",
+      "icon": "bi-window",
+      "skills": [
+        {
+          "id": 11,
+          "skill_group_id": 2,
+          "name": "HTML5",
+          "icon": "bi-filetype-html",
+          "level": 92,
+          "description": "Semantic, accessible markup.",
+          "sort_order": 0,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 12,
+          "skill_group_id": 2,
+          "name": "CSS3",
+          "icon": "bi-palette",
+          "level": 91,
+          "description": "Modern layout, responsive design.",
+          "sort_order": 1,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 13,
+          "skill_group_id": 2,
+          "name": "JavaScript",
+          "icon": "bi-filetype-js",
+          "level": 88,
+          "description": "ES2023, fetch, interactive UIs.",
+          "sort_order": 2,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 14,
+          "skill_group_id": 2,
+          "name": "TypeScript",
+          "icon": "bi-filetype-tsx",
+          "level": 86,
+          "description": "Typed frontend for Next.js storefront.",
+          "sort_order": 3,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 15,
+          "skill_group_id": 2,
+          "name": "React",
+          "icon": "bi-atom",
+          "level": 85,
+          "description": "Component-based UIs — consumed via Next.js.",
+          "sort_order": 4,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 16,
+          "skill_group_id": 2,
+          "name": "Next.js",
+          "icon": "bi-window-stack",
+          "level": 87,
+          "description": "Headless storefront (Baillows) — App Router, SSR, API integration.",
+          "sort_order": 5,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 17,
+          "skill_group_id": 2,
+          "name": "Tailwind CSS",
+          "icon": "bi-wind",
+          "level": 88,
+          "description": "Utility-first styling for Laravel & Next.js apps.",
+          "sort_order": 6,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 18,
+          "skill_group_id": 2,
+          "name": "Bootstrap",
+          "icon": "bi-bootstrap",
+          "level": 90,
+          "description": "Rapid UI for admin panels & portals.",
+          "sort_order": 7,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        }
+      ]
+    },
+    {
+      "name": "Database & Caching",
+      "slug": "database-caching",
+      "icon": "bi-database",
+      "skills": [
+        {
+          "id": 19,
+          "skill_group_id": 3,
+          "name": "MySQL",
+          "icon": "bi-database",
+          "level": 92,
+          "description": "Primary RDBMS for all company products.",
+          "sort_order": 0,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 20,
+          "skill_group_id": 3,
+          "name": "PostgreSQL",
+          "icon": "bi-database-fill",
+          "level": 89,
+          "description": "Advanced queries, JSONB, full-text search.",
+          "sort_order": 1,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 21,
+          "skill_group_id": 3,
+          "name": "MongoDB",
+          "icon": "bi-file-earmark-binary",
+          "level": 80,
+          "description": "Document store for flexible catalogs/logs.",
+          "sort_order": 2,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 22,
+          "skill_group_id": 3,
+          "name": "Redis",
+          "icon": "bi-cpu-fill",
+          "level": 90,
+          "description": "Caching, sessions, queues & rate limiting.",
+          "sort_order": 3,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        }
+      ]
+    },
+    {
+      "name": "Tools & Workflow",
+      "slug": "tools-workflow",
+      "icon": "bi-tools",
+      "skills": [
+        {
+          "id": 23,
+          "skill_group_id": 4,
+          "name": "Git / GitHub",
+          "icon": "bi-git",
+          "level": 94,
+          "description": "Team workflows — branching, PRs, code review at BugBuild.",
+          "sort_order": 0,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 24,
+          "skill_group_id": 4,
+          "name": "npm",
+          "icon": "bi-box-seam",
+          "level": 86,
+          "description": "Frontend package management & build scripts.",
+          "sort_order": 1,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 25,
+          "skill_group_id": 4,
+          "name": "Vite",
+          "icon": "bi-lightning-charge",
+          "level": 87,
+          "description": "Fast bundling for Laravel + Tailwind/Next.js.",
+          "sort_order": 2,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 26,
+          "skill_group_id": 4,
+          "name": "VS Code",
+          "icon": "bi-code-square",
+          "level": 88,
+          "description": "Daily editor with extensions & debugging.",
+          "sort_order": 3,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 27,
+          "skill_group_id": 4,
+          "name": "Postman",
+          "icon": "bi-send",
+          "level": 87,
+          "description": "API design, testing & documentation.",
+          "sort_order": 4,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 28,
+          "skill_group_id": 4,
+          "name": "SSH",
+          "icon": "bi-terminal",
+          "level": 85,
+          "description": "Server access & deployment.",
+          "sort_order": 5,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 29,
+          "skill_group_id": 4,
+          "name": "Linux / VPS",
+          "icon": "bi-hdd-rack",
+          "level": 86,
+          "description": "Fundamentals — Ubuntu, Nginx, deployment & env layers.",
+          "sort_order": 6,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        }
+      ]
+    },
+    {
+      "name": "AI / Machine Learning",
+      "slug": "ai-machine-learning",
+      "icon": "bi-robot",
+      "skills": [
+        {
+          "id": 30,
+          "skill_group_id": 5,
+          "name": "Python",
+          "icon": "bi-filetype-py",
+          "level": 88,
+          "description": "ML prototyping & thesis project.",
+          "sort_order": 0,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 31,
+          "skill_group_id": 5,
+          "name": "Machine Learning",
+          "icon": "bi-graph-up-arrow",
+          "level": 85,
+          "description": "Fundamentals — training, evaluation, deployment.",
+          "sort_order": 1,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 32,
+          "skill_group_id": 5,
+          "name": "OpenAI / LLM",
+          "icon": "bi-stars",
+          "level": 87,
+          "description": "LLM integration for product features.",
+          "sort_order": 2,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 33,
+          "skill_group_id": 5,
+          "name": "HuggingFace",
+          "icon": "bi-emoji-smile",
+          "level": 86,
+          "description": "Transformers & model hosting.",
+          "sort_order": 3,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 34,
+          "skill_group_id": 5,
+          "name": "Recommendation Systems",
+          "icon": "bi-heart-pulse",
+          "level": 85,
+          "description": "Personalized product recommendations (thesis).",
+          "sort_order": 4,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        },
+        {
+          "id": 35,
+          "skill_group_id": 5,
+          "name": "TensorFlow",
+          "icon": "bi-cpu",
+          "level": 80,
+          "description": "Model building & experimentation.",
+          "sort_order": 5,
+          "created_at": "2026-09-13T16:08:10.000000Z",
+          "updated_at": "2026-09-13T16:08:10.000000Z"
+        }
+      ]
+    }
+  ],
+  "tech_stack_groups": [
+    {
+      "icon": "bi-braces-asterisk",
+      "tone": "primary",
+      "chips": [
+        "PHP",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "SQL"
+      ],
+      "title": "Languages"
+    },
+    {
+      "icon": "bi-grid-1x2",
+      "tone": "accent",
+      "chips": [
+        "Laravel",
+        "Livewire",
+        "React",
+        "Next.js",
+        "Bootstrap",
+        "Tailwind CSS"
+      ],
+      "title": "Frameworks"
+    },
+    {
+      "icon": "bi-database-fill",
+      "tone": "success",
+      "chips": [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis"
+      ],
+      "title": "Databases"
+    },
+    {
+      "icon": "bi-box-seam",
+      "tone": "warning",
+      "chips": [
+        "Git/GitHub",
+        "npm",
+        "Vite",
+        "VS Code",
+        "Postman",
+        "SSH",
+        "Linux/VPS"
+      ],
+      "title": "Tools & Workflow"
+    },
+    {
+      "icon": "bi-robot",
+      "tone": "danger",
+      "chips": [
+        "Python",
+        "Machine Learning",
+        "OpenAI/LLM",
+        "HuggingFace",
+        "Recommendation Systems",
+        "TensorFlow"
+      ],
+      "title": "AI / ML"
+    }
+  ],
+  "process_steps": [
+    {
+      "icon": "bi-search",
+      "step": "STEP 01",
+      "title": "Requirement Analysis"
+    },
+    {
+      "icon": "bi-map",
+      "step": "STEP 02",
+      "title": "Planning"
+    },
+    {
+      "icon": "bi-diagram-3",
+      "step": "STEP 03",
+      "title": "Architecture"
+    },
+    {
+      "icon": "bi-database",
+      "step": "STEP 04",
+      "title": "Database Design"
+    },
+    {
+      "icon": "bi-code-slash",
+      "step": "STEP 05",
+      "title": "Development"
+    },
+    {
+      "icon": "bi-bug",
+      "step": "STEP 06",
+      "title": "Testing"
+    },
+    {
+      "icon": "bi-cloud-upload",
+      "step": "STEP 07",
+      "title": "Deployment"
+    },
+    {
+      "icon": "bi-heart-pulse",
+      "step": "STEP 08",
+      "title": "Maintenance"
+    }
+  ],
+  "current_focus": [
+    {
+      "body": "<strong>AI-Powered Multi-Vendor E-Commerce</strong> — personalized recommendations, dynamic pricing, AI-driven customer assistance, and ML-based detection of scams/spam/vulnerabilities.",
+      "icon": "bi-hammer",
+      "tone": "primary",
+      "badge": "Thesis",
+      "title": "Current Focus",
+      "progress": 65,
+      "badge_tone": "primary"
+    },
+    {
+      "icon": "bi-book-half",
+      "tone": "accent",
+      "badge": "Learning",
+      "items": [
+        "Scalable software architecture & system design",
+        "DevOps fundamentals & VPS/Linux",
+        "AI/ML, LLMs & application security"
+      ],
+      "title": "Currently Learning",
+      "badge_tone": "accent"
+    },
+    {
+      "icon": "bi-signpost-2",
+      "tone": "warning",
+      "badge": "2026",
+      "items": [
+        {
+          "text": "Complete thesis MVP + recommendation engine",
+          "tone": "success",
+          "quarter": "Q1"
+        },
+        {
+          "text": "Dynamic pricing & AI assistant integration",
+          "tone": "primary",
+          "quarter": "Q2"
+        },
+        {
+          "text": "ML detection for scams/spam/vulnerabilities",
+          "tone": "accent",
+          "quarter": "Q3"
+        },
+        {
+          "text": "Graduate B.Sc. CSE (Feni University)",
+          "tone": "warning",
+          "quarter": "Q4"
+        }
+      ],
+      "title": "Roadmap",
+      "badge_tone": "warning"
+    },
+    {
+      "icon": "bi-trophy",
+      "tone": "danger",
+      "badge": null,
+      "items": [
+        "Build scalable AI-augmented commerce platforms",
+        "Deepen system design & DevOps expertise",
+        "Ship AI tools that solve practical problems"
+      ],
+      "title": "Future Goals",
+      "badge_tone": null
+    },
+    {
+      "icon": "bi-tools",
+      "tone": "primary",
+      "badge": null,
+      "chips": [
+        "VS Code",
+        "Git/GitHub",
+        "Postman",
+        "npm",
+        "Vite",
+        "SSH",
+        "Linux/VPS"
+      ],
+      "title": "Tools I Use Daily",
+      "badge_tone": null
+    },
+    {
+      "icon": "bi-heart-fill",
+      "tone": "success",
+      "badge": null,
+      "chips": [
+        {
+          "icon": "bi-braces",
+          "label": "Laravel"
+        },
+        {
+          "icon": "bi-stars",
+          "label": "OpenAI"
+        },
+        {
+          "icon": "bi-cpu",
+          "label": "Redis"
+        },
+        {
+          "icon": "bi-database-fill",
+          "label": "MySQL"
+        },
+        {
+          "icon": "bi-box-seam",
+          "label": "Next.js"
+        }
+      ],
+      "title": "Favorite Technologies",
+      "badge_tone": null
+    }
+  ],
+  "pinned_repos": [
+    {
+      "name": "Graphics-Opengl",
+      "forks": "0",
+      "stars": "0",
+      "language": "C",
+      "description": ""
+    },
+    {
+      "name": "practice-blog-site",
+      "forks": "0",
+      "stars": "0",
+      "language": "JavaScript",
+      "description": ""
+    },
+    {
+      "name": "Blog-site",
+      "forks": "0",
+      "stars": "0",
+      "language": "HTML",
+      "description": ""
+    },
+    {
+      "name": "repository-pattern-in-laravel",
+      "forks": "0",
+      "stars": "0",
+      "language": "PHP",
+      "description": ""
+    },
+    {
+      "name": "ecom-project",
+      "forks": "0",
+      "stars": "0",
+      "language": "CSS",
+      "description": ""
+    },
+    {
+      "name": "defang-flask",
+      "forks": "0",
+      "stars": "0",
+      "language": "Python",
+      "description": ""
+    }
+  ],
+  "languages": [
+    {
+      "name": "Bengali",
+      "label": "Native",
+      "level": 100
+    },
+    {
+      "name": "English",
+      "label": "Fluent · C1",
+      "level": 90
+    },
+    {
+      "name": "Hindi / Urdu",
+      "label": "Conversational",
+      "level": 70
+    },
+    {
+      "name": "Arabic",
+      "label": "Basic",
+      "level": 35
+    }
+  ],
+  "interests": [
+    {
+      "icon": "bi-book",
+      "label": "Systems design books"
+    },
+    {
+      "icon": "bi-camera",
+      "label": "Street photography"
+    },
+    {
+      "icon": "bi-cup-hot",
+      "label": "Third-wave coffee"
+    },
+    {
+      "icon": "bi-controller",
+      "label": "Indie games"
+    },
+    {
+      "icon": "bi-bicycle",
+      "label": "Cycling"
+    },
+    {
+      "icon": "bi-journal-code",
+      "label": "Reading RFCs (yes, really)"
+    },
+    {
+      "icon": "bi-music-note-beamed",
+      "label": "Lo-fi while coding"
+    }
+  ],
+  "fun_facts": [
+    "Final-year CSE student — thesis on AI-powered multi-vendor e-commerce.",
+    "Contributed to 7 live company products at BugBuild.",
+    "Comfortable debugging across Laravel, PHP, DB, deployment & environment layers.",
+    "Exploring scam/spam/malicious content detection with ML."
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Sellino — Multi-Vendor Ecommerce Platform",
+      "slug": "sellino-ecommerce-platform",
+      "tagline": "A Laravel commerce platform with seller operations, POS, inventory, delivery, wallets, returns, and a versioned REST API.",
+      "description": "An ecommerce platform supporting storefronts, seller management, catalog operations, order fulfilment, payments, customer accounts, and operational reporting. Built as a core product.",
+      "badge_label": "Featured",
+      "badge_tone": "primary",
+      "category": "ecommerce",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/project-ecommerce.svg",
+      "gallery": [
+        "/uploads/portfolio/project-ecommerce.svg"
+      ],
+      "tech_stack": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "REST API"
+      ],
+      "badges": [
+        {
+          "tone": "success",
+          "label": "Ecommerce"
+        },
+        {
+          "tone": "primary",
+          "label": "Multi-vendor"
+        },
+        {
+          "tone": "warning",
+          "label": "POS"
+        }
+      ],
+      "demo_url": "https://sellino.example.com",
+      "github_url": "#",
+      "client": "Personal product",
+      "role": "Full-stack Developer",
+      "timeline": "2025 — 2026",
+      "team": "Solo",
+      "status_label": "Completed",
+      "status_tone": "secondary",
+      "facts": {
+        "problem": "Commerce workflows span storefronts, inventory, orders, delivery, payments, and support.",
+        "overview": "Built as a core product, a modular Laravel ecommerce platform covering both public shopping journeys and seller-side operations.",
+        "solution": "Built a modular Laravel application with API v10 endpoints, role-based seller features, and connected operational modules.",
+        "role_note": "I focused on full-stack features across ecommerce operations, seller workflows, inventory, delivery, and API-connected functionality.",
+        "business_goal": "Give merchants one system for catalog, sales, fulfilment, finance, and customer operations."
+      },
+      "modules": [
+        {
+          "icon": "bi-shop-window",
+          "label": "Storefront & Catalog"
+        },
+        {
+          "icon": "bi-boxes",
+          "label": "Inventory & Warehouses"
+        },
+        {
+          "icon": "bi-cart-check",
+          "label": "Orders & Returns"
+        },
+        {
+          "icon": "bi-truck",
+          "label": "Delivery & Shipping"
+        },
+        {
+          "icon": "bi-cash-stack",
+          "label": "Wallet & Finance"
+        },
+        {
+          "icon": "bi-display",
+          "label": "Point of Sale"
+        }
+      ],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": null,
+      "seo_description": null,
+      "sort_order": 1,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 2,
+      "title": "Baillows — Headless Ecommerce Storefront",
+      "slug": "baillows-nextjs-storefront",
+      "tagline": "A Next.js 16 customer storefront consuming the Sellino Laravel API with checkout, authentication, dashboards, wishlist, wallet, affiliate, and real-time updates.",
+      "description": "A typed, API-driven ecommerce frontend built with the Next.js App Router and Laravel API v10. Built as a core product.",
+      "badge_label": "Frontend",
+      "badge_tone": "accent",
+      "category": "ecommerce",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/project-ecommerce.svg",
+      "gallery": [
+        "/uploads/portfolio/project-ecommerce.svg"
+      ],
+      "tech_stack": [
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "badges": [
+        {
+          "tone": "primary",
+          "label": "Next.js"
+        },
+        {
+          "tone": "accent",
+          "label": "Headless"
+        },
+        {
+          "tone": "success",
+          "label": "REST API"
+        }
+      ],
+      "demo_url": "https://baillows.example.com",
+      "github_url": "#",
+      "client": "Personal product",
+      "role": "Frontend Developer",
+      "timeline": "2026",
+      "team": "Solo",
+      "status_label": "Completed",
+      "status_tone": "secondary",
+      "facts": {
+        "problem": "The frontend needs secure client authentication and a consistent experience across shopping, account, and checkout flows.",
+        "overview": "Built a customer-facing storefront that separates presentation from the Laravel commerce backend.",
+        "solution": "Built the Next.js App Router implementation with typed API utilities, HTTP-only token cookies, protected customer routes, and Laravel Reverb-backed updates.",
+        "role_note": "I focused on API integration, authentication flows, checkout, protected account pages, and real-time features.",
+        "business_goal": "Deliver a responsive shopping experience without duplicating commerce logic in the frontend."
+      },
+      "modules": [
+        {
+          "icon": "bi-grid",
+          "label": "Product Discovery"
+        },
+        {
+          "icon": "bi-bag-check",
+          "label": "Cart & Checkout"
+        },
+        {
+          "icon": "bi-person-lock",
+          "label": "OTP Authentication"
+        },
+        {
+          "icon": "bi-heart",
+          "label": "Wishlist"
+        },
+        {
+          "icon": "bi-wallet2",
+          "label": "Wallet & Affiliate"
+        },
+        {
+          "icon": "bi-chat-dots",
+          "label": "Customer Chat"
+        }
+      ],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": null,
+      "seo_description": null,
+      "sort_order": 2,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 3,
+      "title": "JobNect — Job Listing Platform",
+      "slug": "jobnect-job-listing-platform",
+      "tagline": "A Laravel job marketplace connecting candidates and employers through job listings, applications, profiles, resumes, subscriptions, and location-aware search.",
+      "description": "A job-board application with candidate and employer workflows, resume data, job applications, subscriptions, payments, and global location support. Built as a core product.",
+      "badge_label": "Marketplace",
+      "badge_tone": "primary",
+      "category": "saas",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/project-brightlms.svg",
+      "gallery": null,
+      "tech_stack": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Bootstrap"
+      ],
+      "badges": [
+        {
+          "tone": "primary",
+          "label": "Job Board"
+        },
+        {
+          "tone": "warning",
+          "label": "SaaS"
+        }
+      ],
+      "demo_url": "https://jobnect.example.com",
+      "github_url": "#",
+      "client": "Personal product",
+      "role": "Full-stack Developer",
+      "timeline": "2022 — 2026",
+      "team": "Solo",
+      "status_label": "Completed",
+      "status_tone": "secondary",
+      "facts": {
+        "problem": "Job platforms need consistent handling of profiles, applications, location data, and payments across multiple user types.",
+        "overview": "Built a job marketplace covering candidate and employer workflows.",
+        "solution": "Built Laravel features for job listings, candidate/employer profiles, resume data, application tracking, subscriptions, and location-aware search.",
+        "role_note": "Full-stack development across application workflows.",
+        "business_goal": "Connect candidates and employers with structured profiles, searchable listings, and subscription billing."
+      },
+      "modules": [
+        {
+          "icon": "bi-briefcase",
+          "label": "Job Listings"
+        },
+        {
+          "icon": "bi-person-vcard",
+          "label": "Candidate Profiles"
+        },
+        {
+          "icon": "bi-building",
+          "label": "Employer Profiles"
+        },
+        {
+          "icon": "bi-file-earmark-text",
+          "label": "Resume Builder"
+        },
+        {
+          "icon": "bi-geo-alt",
+          "label": "Location Search"
+        },
+        {
+          "icon": "bi-credit-card",
+          "label": "Subscriptions & Payments"
+        }
+      ],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": null,
+      "seo_description": null,
+      "sort_order": 3,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 4,
+      "title": "Feni Doctor Info — Healthcare Directory",
+      "slug": "feni-doctor-info",
+      "tagline": "A local healthcare information platform for finding doctors, hospitals, ambulances, blood banks, blood donors, and appointments.",
+      "description": "A Laravel healthcare directory and discovery platform with hospital and doctor profiles, appointment requests, emergency resources, and localized area data. Built as a core product.",
+      "badge_label": "Healthcare",
+      "badge_tone": "danger",
+      "category": "saas",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/project-medicore.svg",
+      "gallery": null,
+      "tech_stack": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Tailwind CSS"
+      ],
+      "badges": [
+        {
+          "tone": "danger",
+          "label": "HealthTech"
+        },
+        {
+          "tone": "success",
+          "label": "Directory"
+        }
+      ],
+      "demo_url": "https://fenidoctor.example.com",
+      "github_url": "#",
+      "client": "Personal product",
+      "role": "Full-stack Developer",
+      "timeline": "2025 — 2026",
+      "team": "Solo",
+      "status_label": "Completed",
+      "status_tone": "secondary",
+      "facts": {
+        "problem": "Healthcare discovery is fragmented across facilities, specialties, and emergency resources.",
+        "overview": "Built a healthcare directory for local medical discovery.",
+        "solution": "Built Laravel features for doctor/hospital profiles, appointment requests, blood donor/bank modules, and district/upazila data.",
+        "role_note": "Full-stack development across platform features.",
+        "business_goal": "Make local healthcare information — doctors, hospitals, ambulances, blood resources — easier to find and request."
+      },
+      "modules": [
+        {
+          "icon": "bi-person-heart",
+          "label": "Doctor Directory"
+        },
+        {
+          "icon": "bi-hospital",
+          "label": "Hospital Profiles"
+        },
+        {
+          "icon": "bi-calendar-check",
+          "label": "Appointments"
+        },
+        {
+          "icon": "bi-droplet",
+          "label": "Blood Donors & Banks"
+        },
+        {
+          "icon": "bi-truck",
+          "label": "Ambulance Directory"
+        },
+        {
+          "icon": "bi-geo-alt",
+          "label": "District & Upazila Data"
+        }
+      ],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": null,
+      "seo_description": null,
+      "sort_order": 4,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 5,
+      "title": "ParcelFly — Delivery Management System",
+      "slug": "parcelfly-delivery-management",
+      "tagline": "A logistics platform for domestic and international parcel operations, merchant accounts, hubs, courier partners, tracking, COD, and financial workflows.",
+      "description": "A Laravel delivery-management system that supports parcel lifecycle tracking, pickup requests, merchant operations, shipping rates, and accounting records. Built as a core product.",
+      "badge_label": "Logistics",
+      "badge_tone": "success",
+      "category": "api",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/project-shiproute.svg",
+      "gallery": null,
+      "tech_stack": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "REST API"
+      ],
+      "badges": [
+        {
+          "tone": "success",
+          "label": "Logistics"
+        },
+        {
+          "tone": "primary",
+          "label": "Delivery"
+        },
+        {
+          "tone": "warning",
+          "label": "COD"
+        }
+      ],
+      "demo_url": "https://parcelfly.example.com",
+      "github_url": "#",
+      "client": "Personal product",
+      "role": "Full-stack Developer",
+      "timeline": "2022 — 2026",
+      "team": "Solo",
+      "status_label": "Completed",
+      "status_tone": "secondary",
+      "facts": {
+        "problem": "Parcel operations span merchants, hubs, delivery personnel, couriers, tracking events, and accounting.",
+        "overview": "Built a logistics system managing parcel lifecycle from pickup through tracking and settlement.",
+        "solution": "Built Laravel features for parcel management, tracking events, merchant/hub workflows, shipping rates, and delivery finance.",
+        "role_note": "I focused on parcel operations, tracking, merchant workflows, shipping rates, and delivery finance features.",
+        "business_goal": "Provide one system for parcel operations, merchant workflows, courier coordination, and COD finance."
+      },
+      "modules": [
+        {
+          "icon": "bi-box-seam",
+          "label": "Parcel Management"
+        },
+        {
+          "icon": "bi-pin-map",
+          "label": "Tracking Events"
+        },
+        {
+          "icon": "bi-shop",
+          "label": "Merchant Accounts"
+        },
+        {
+          "icon": "bi-building",
+          "label": "Hubs & Delivery Team"
+        },
+        {
+          "icon": "bi-globe2",
+          "label": "International Shipping"
+        },
+        {
+          "icon": "bi-receipt",
+          "label": "COD & Accounting"
+        }
+      ],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": null,
+      "seo_description": null,
+      "sort_order": 5,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 6,
+      "title": "Subsify — Digital Subscription Marketplace",
+      "slug": "subsify-digital-subscription-marketplace",
+      "tagline": "A Laravel marketplace for selling and managing digital tools, software licenses, and subscription products.",
+      "description": "A subscription and digital-product commerce platform with customer, seller, and administrator workflows, product variants, payments, commissions, and renewal notices. Built as a core product.",
+      "badge_label": "Subscriptions",
+      "badge_tone": "warning",
+      "category": "saas",
+      "featured": false,
+      "is_active": true,
+      "image": "/uploads/portfolio/project-billstack.svg",
+      "gallery": null,
+      "tech_stack": [
+        "Laravel",
+        "Bootstrap",
+        "JavaScript",
+        "MySQL"
+      ],
+      "badges": [
+        {
+          "tone": "warning",
+          "label": "SaaS"
+        },
+        {
+          "tone": "accent",
+          "label": "Digital Products"
+        }
+      ],
+      "demo_url": "https://subsify.example.com",
+      "github_url": "#",
+      "client": "Personal product",
+      "role": "Full-stack Developer",
+      "timeline": "2024 — 2026",
+      "team": "Solo",
+      "status_label": "Completed",
+      "status_tone": "secondary",
+      "facts": {
+        "problem": "Digital subscription commerce needs product variants, renewals, commissions, and inquiry handling in one flow.",
+        "overview": "Built a subscription marketplace for digital tools and licenses.",
+        "solution": "Built Laravel + Vue features for digital products, subscriptions/renewals, portals, orders/payments, commissions/payouts, and customer inquiries.",
+        "role_note": "Full-stack development across marketplace features.",
+        "business_goal": "Support customer, seller, and admin workflows for subscription commerce."
+      },
+      "modules": [
+        {
+          "icon": "bi-key",
+          "label": "Digital Products"
+        },
+        {
+          "icon": "bi-arrow-repeat",
+          "label": "Subscriptions & Renewals"
+        },
+        {
+          "icon": "bi-people",
+          "label": "Customer & Seller Portals"
+        },
+        {
+          "icon": "bi-credit-card",
+          "label": "Orders & Payments"
+        },
+        {
+          "icon": "bi-percent",
+          "label": "Commissions & Payouts"
+        },
+        {
+          "icon": "bi-chat-square-text",
+          "label": "Customer Inquiries"
+        }
+      ],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": null,
+      "seo_description": null,
+      "sort_order": 6,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 7,
+      "title": "PGHSF Education Portal",
+      "slug": "pghsf-education-portal",
+      "tagline": "A bilingual Laravel portal for publishing institutional notices, teacher information, galleries, blogs, and contact messages.",
+      "description": "An education website and admin panel with Bengali and English content, public information pages, and structured content management. Built as a core product.",
+      "badge_label": "Education",
+      "badge_tone": "accent",
+      "category": "saas",
+      "featured": false,
+      "is_active": true,
+      "image": "/uploads/portfolio/project-brightlms.svg",
+      "gallery": null,
+      "tech_stack": [
+        "Laravel",
+        "Bootstrap",
+        "JavaScript",
+        "Tailwind CSS"
+      ],
+      "badges": [
+        {
+          "tone": "accent",
+          "label": "EdTech"
+        },
+        {
+          "tone": "success",
+          "label": "Bilingual"
+        }
+      ],
+      "demo_url": "https://pghsf.example.com",
+      "github_url": "#",
+      "client": "Personal product",
+      "role": "Full-stack Developer",
+      "timeline": "2026",
+      "team": "Solo",
+      "status_label": "Completed",
+      "status_tone": "secondary",
+      "facts": {
+        "problem": "Institutions need a simple way to maintain bilingual notices, directories, galleries, and contact workflows.",
+        "overview": "Built a bilingual education portal.",
+        "solution": "Built Laravel + Vue/Inertia features for notices, teacher directory, gallery, blog, contact messages, and localization.",
+        "role_note": "Full-stack development across portal features.",
+        "business_goal": "Publish institutional notices, teacher information, and media in Bangla and English."
+      },
+      "modules": [
+        {
+          "icon": "bi-megaphone",
+          "label": "Notice Board"
+        },
+        {
+          "icon": "bi-person-workspace",
+          "label": "Teacher Directory"
+        },
+        {
+          "icon": "bi-images",
+          "label": "Gallery"
+        },
+        {
+          "icon": "bi-journal-richtext",
+          "label": "Blog"
+        },
+        {
+          "icon": "bi-envelope",
+          "label": "Contact Messages"
+        },
+        {
+          "icon": "bi-translate",
+          "label": "Bangla & English"
+        }
+      ],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": null,
+      "seo_description": null,
+      "sort_order": 7,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 8,
+      "title": "AI-Powered Multi-Vendor E-Commerce System",
+      "slug": "ai-powered-multivendor-ecommerce",
+      "tagline": "Thesis project (In Development): ML for personalized recommendations, dynamic pricing, AI-driven customer assistance and detection of scams, spam, malicious content and vulnerabilities.",
+      "description": "Final-year CSE thesis combining software engineering, cybersecurity and AI into a scalable end-to-end e-commerce solution. Architecture integrates web frameworks, database management and AI models.",
+      "badge_label": "Thesis · In Development",
+      "badge_tone": "danger",
+      "category": "ai",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/project-ecommerce.svg",
+      "gallery": [
+        "/uploads/portfolio/project-ecommerce.svg"
+      ],
+      "tech_stack": [
+        "Laravel",
+        "Python",
+        "AI",
+        "MySQL",
+        "TensorFlow",
+        "OpenAI"
+      ],
+      "badges": [
+        {
+          "tone": "danger",
+          "label": "AI / ML"
+        },
+        {
+          "tone": "success",
+          "label": "Ecommerce"
+        },
+        {
+          "tone": "accent",
+          "label": "Thesis"
+        }
+      ],
+      "demo_url": "#",
+      "github_url": "#",
+      "client": "Feni University — Thesis Project",
+      "role": "Author & Developer",
+      "timeline": "2025 — 2026 · In Development",
+      "team": "Solo thesis + advisor",
+      "status_label": "In Development",
+      "status_tone": "warning",
+      "facts": {
+        "problem": "Marketplaces struggle with relevance (recommendations), pricing competitiveness and trust (scams/spam/malicious content). Academic goal is to combine software engineering + cybersecurity + AI in one evaluatable system.",
+        "overview": "Developing ML models for personalized product recommendations, dynamic pricing strategies and AI-driven customer assistance within a multi-vendor e-commerce shell. Exploring detection of scams, spam, malicious content and security vulnerabilities using machine learning.",
+        "solution": "Building a Laravel commerce base and integrating Python ML services: recommendation engine, dynamic pricing model, AI customer assistant and classifiers for scams/spam/malicious content. Investigating model training, evaluation, deployment and application integration.",
+        "role_note": "Academic thesis project — investigation, model training/evaluation, deployment and end-to-end platform integration.",
+        "business_goal": "Design an architecture for integrating AI-based detection into web platforms while combining web tech, DB management and AI models into a scalable end-to-end solution."
+      },
+      "modules": [
+        {
+          "icon": "bi-heart-pulse",
+          "label": "Personalized Recommendations"
+        },
+        {
+          "icon": "bi-graph-up-arrow",
+          "label": "Dynamic Pricing"
+        },
+        {
+          "icon": "bi-robot",
+          "label": "AI Customer Assistance"
+        },
+        {
+          "icon": "bi-shield-exclamation",
+          "label": "Scam / Spam Detection"
+        },
+        {
+          "icon": "bi-bug",
+          "label": "Vulnerability Detection"
+        },
+        {
+          "icon": "bi-diagram-3",
+          "label": "Scalable E-Commerce Architecture"
+        }
+      ],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": null,
+      "seo_description": null,
+      "sort_order": 8,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    }
+  ],
+  "case_studies": [
+    {
+      "id": 1,
+      "project_id": 1,
+      "title": "Sellino Commerce Platform",
+      "slug": "sellino-ecommerce-platform",
+      "excerpt": "A modular Laravel commerce platform connecting shopping, seller operations, fulfilment, finance, and API consumers — built as a core product.",
+      "content": "<p><em>Personal project — built as a core product. The notes below describe the product and what I built.</em></p><h2>Project Overview</h2><p>Sellino is a modular Laravel ecommerce platform built around real operational workflows, not just the storefront. It includes catalog and seller tools, order management, inventory, delivery, payment records, customer accounts, returns, and POS support.</p><h2>What I Built</h2><p>I built full-stack features across ecommerce operations, seller workflows, inventory, delivery, finance, and API-connected functionality as a core product.</p><h2>Architecture</h2><p>The platform exposes a versioned API v10 alongside its Laravel web application. This supports the customer web experience and allows a dedicated Next.js frontend to consume the same product, customer, checkout, and account domains.</p><h2>Key Modules</h2><p>Work spans catalog and seller management, warehouses and inventory, shipping partners, delivery charges, order shipments, returns and replacements, wallets, financial records, customer support chat, and CMS-managed site sections — all built as a core product.</p><h2>Engineering Focus</h2><p>The implementation favours clear domain boundaries, role-aware seller features, and incremental schema changes so that operational features can evolve without disconnecting the shopping experience from the back office.</p>\n<h2>Implementation notes</h2>\n<p>Seller-facing features run behind a role-aware policy layer, so the same controller surface serves different capabilities per account type. Cart and pricing rules live in dedicated service classes with queue-backed side effects (order confirmations, invoice records, wallet movements), keeping request cycles short even on heavy checkout paths. Multi-warehouse inventory is resolved at quote time: stock reservations are scoped per location, delivery-charge rules are cached per zone, and returns re-enter the same state machine as fresh orders so the fulfilment flow has exactly one source of truth.</p>\n<p>On the data side, schema changes ship as expand-contract migrations so deploys never block on long ALTERs: new columns fill in the background, readers switch behind a feature flag, and the old column is dropped a release later. Search and catalog endpoints are cache-tagged per category and vendor, which makes invalidation surgical after price or stock updates. The API v10 layer mirrors the web controllers' form requests and resources, so the Next.js storefront and the server-rendered app consume byte-identical payloads from one codebase.</p>",
+      "cover": "/uploads/portfolio/case-ecommerce.svg",
+      "gallery": [
+        "/uploads/portfolio/case-ecommerce.svg"
+      ],
+      "badges": [
+        {
+          "tone": "primary",
+          "label": "Ecommerce"
+        },
+        {
+          "tone": "success",
+          "label": "Laravel"
+        },
+        {
+          "tone": "accent",
+          "label": "REST API"
+        }
+      ],
+      "tags": [
+        "laravel",
+        "ecommerce",
+        "api",
+        "multi-vendor"
+      ],
+      "metrics": [
+        {
+          "label": "API version",
+          "value": "v10"
+        },
+        {
+          "label": "core domains",
+          "value": "6+"
+        },
+        {
+          "label": "customer interfaces",
+          "value": "2"
+        }
+      ],
+      "author_name": "Mohammed Akbar Hossen",
+      "read_minutes": 8,
+      "featured": true,
+      "status": "published",
+      "published_at": "2026-08-13T18:30:45.000000Z",
+      "seo_title": "Sellino — Laravel Multi-Vendor Ecommerce Platform",
+      "seo_description": "A modular Laravel ecommerce platform with seller operations, inventory, delivery, finance, and API v10.",
+      "sort_order": 1,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 2,
+      "project_id": 2,
+      "title": "Baillows Next.js Storefront",
+      "slug": "baillows-nextjs-storefront",
+      "excerpt": "A headless customer storefront built with typed Laravel API clients, HTTP-only session cookies, and App Router patterns — built as a core product.",
+      "content": "<p><em>Personal project — built as a core product. The notes below describe the product and what I built.</em></p><h2>Project Overview</h2><p>Baillows is a customer-facing ecommerce frontend for a Laravel backend. It provides product discovery, cart and checkout, account features, wishlist, wallet, affiliate tools, deals, and seller-customer chat.</p><h2>What I Built</h2><p>I built API integration, authentication flows, checkout, protected account pages, and real-time features as a core product.</p><h2>Secure Authentication</h2><p>The storefront uses a shared authentication context and routes login responses through Next.js endpoints that store tokens in HTTP-only cookies. OTP, registration, password reset, and social-login flows synchronize the active session without relying on local storage.</p><h2>Frontend Architecture</h2><p>Next.js App Router separates public server-rendered product and navigation data from client-side account and checkout interactions. A typed API layer centralizes calls to the Laravel API, while protected layouts gate customer-only dashboards, wallet, affiliate, and reward-point routes.</p><h2>Real-Time Features</h2><p>Laravel Reverb integration supports chat and order-status updates, while the frontend keeps navigation and CMS-managed sections connected to the backend.</p>\n<h2>Implementation notes</h2>\n<p>Session handling routes every login response through a Next.js route handler that sets an HTTP-only cookie and immediately refreshes the shared auth context, so OTP, password, and social-login paths converge on one code path. Server components fetch catalog and navigation data directly, while account, wallet, and checkout interactions run client-side against a typed API client with per-route error envelopes, which keeps expired-token handling in one interceptor rather than scattered across pages.</p>\n<p>Protected areas sit behind layout-level guards that validate the session before rendering any account UI, so dashboard, wallet, wishlist, and affiliate pages share a single gate. Real-time chat and order-status updates subscribe through Laravel Reverb-backed channels with graceful fallback to polling on reconnect. Products and CMS-managed sections are server-rendered for first paint and SEO, while cart mutations are optimistic and reconciled against the API response, so the cart never shows a state the backend did not confirm.</p>",
+      "cover": "/uploads/portfolio/case-ecommerce.svg",
+      "gallery": null,
+      "badges": [
+        {
+          "tone": "primary",
+          "label": "Next.js"
+        },
+        {
+          "tone": "accent",
+          "label": "TypeScript"
+        },
+        {
+          "tone": "success",
+          "label": "Ecommerce"
+        }
+      ],
+      "tags": [
+        "nextjs",
+        "typescript",
+        "ecommerce",
+        "laravel-api"
+      ],
+      "metrics": [
+        {
+          "label": "Next.js version",
+          "value": "16"
+        },
+        {
+          "label": "Laravel API",
+          "value": "v10"
+        },
+        {
+          "label": "session cookies",
+          "value": "HTTP-only"
+        }
+      ],
+      "author_name": "Mohammed Akbar Hossen",
+      "read_minutes": 7,
+      "featured": true,
+      "status": "published",
+      "published_at": "2026-09-13T18:30:45.000000Z",
+      "seo_title": "Baillows — Next.js Headless Ecommerce Storefront",
+      "seo_description": "A typed Next.js 16 ecommerce frontend integrated with a Laravel API.",
+      "sort_order": 2,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 3,
+      "project_id": 5,
+      "title": "ParcelFly Delivery Management",
+      "slug": "parcelfly-delivery-management",
+      "excerpt": "A Laravel logistics system for parcel tracking, merchant operations, delivery teams, domestic and international shipping, and COD finance — built as a core product.",
+      "content": "<p><em>Personal project — built as a core product. The notes below describe the product and what I built.</em></p><h2>Project Overview</h2><p>ParcelFly is a delivery-management application for managing parcel operations from pickup through tracking and payment settlement.</p><h2>What I Built</h2><p>I built features for parcel operations, tracking, merchant workflows, shipping rates, and delivery finance as a core product.</p><h2>Operational Scope</h2><p>The platform includes merchants, shops, pickup requests, hubs, delivery personnel, parcel status updates, courier companies, COD payment methods, support workflows, and financial records.</p><h2>Shipping Features</h2><p>Domestic and international shipping use separate rate and insurance structures. International workflows also include pre-alerts, commodities, events, and plan subscriptions.</p>\n<h2>Implementation notes</h2>\n<p>The parcel lifecycle is modelled as an explicit status machine: pickup-requested, collected, in-hub, in-transit, out-for-delivery, delivered, or returned. Every transition writes an immutable tracking event, which is what the public tracking endpoints and merchant timelines replay. COD settlement runs on a per-hub ledger with reconciliation reports that match courier remittances against delivered parcels, so accounting sees a closed loop per payout cycle instead of scattered records.</p>\n<p>Rate calculation separates domestic and international pricing into their own structures. International shipments additionally carry pre-alerts, commodity declarations, and plan-based insurance, all validated before label generation so bad payloads fail early. Merchant onboarding, hub assignments, and delivery-personnel accounts share one role system with scoped permissions, and status webhooks notify merchants on every transition their integrations subscribe to.</p>",
+      "cover": "/uploads/portfolio/case-shiproute.svg",
+      "gallery": null,
+      "badges": [
+        {
+          "tone": "success",
+          "label": "Logistics"
+        },
+        {
+          "tone": "primary",
+          "label": "Laravel"
+        }
+      ],
+      "tags": [
+        "laravel",
+        "logistics",
+        "delivery",
+        "cod"
+      ],
+      "metrics": [
+        {
+          "label": "shipping scopes",
+          "value": "2"
+        },
+        {
+          "label": "parcel operations",
+          "value": "6+"
+        },
+        {
+          "label": "payment support",
+          "value": "COD"
+        }
+      ],
+      "author_name": "Mohammed Akbar Hossen",
+      "read_minutes": 6,
+      "featured": false,
+      "status": "published",
+      "published_at": "2026-07-13T18:30:45.000000Z",
+      "seo_title": "ParcelFly — Laravel Delivery Management System",
+      "seo_description": "A logistics application for parcel operations, tracking, COD, merchant accounts, and shipping rates.",
+      "sort_order": 3,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 4,
+      "project_id": 8,
+      "title": "AI-Powered Multi-Vendor E-Commerce System",
+      "slug": "ai-powered-multivendor-ecommerce",
+      "excerpt": "Thesis project (In Development) — ML for recommendations, dynamic pricing, AI assistance and detection of scams/spam/malicious content. Combining software engineering, cybersecurity & AI.",
+      "content": "<p><em>Thesis Project — In Development · Feni University · Combining software engineering, cybersecurity and AI.</em></p><h2>Project Overview</h2><p>Developing an end-to-end multi-vendor e-commerce system that integrates AI models directly into the commerce architecture. The platform combines Laravel web technologies, database management and Python-based ML services.</p><h2>AI Features</h2><ul><li><strong>Personalized product recommendations</strong> — collaborative + content-based ranking</li><li><strong>Dynamic pricing strategies</strong> — data-driven pricing adjustments</li><li><strong>AI-driven customer assistance</strong> — contextual shopping help</li><li><strong>Scam / spam / malicious content detection</strong> — ML classifiers for trust & safety</li><li><strong>Security vulnerability detection</strong> — ML-assisted code/content scanning</li></ul><h2>Engineering Focus</h2><p>Investigating model training, evaluation, deployment and application integration. Designing an architecture for integrating AI-based detection into web platforms so that software engineering, database management and AI models scale together.</p><h2>Status</h2><p>In Development — thesis defense scheduled 2026. The system is being built as a scalable, evaluatable whole rather than a bolted-on demo.</p>\n<h2>Implementation notes</h2>\n<p>The architecture keeps Laravel as the commerce core and moves model inference into separate Python services, so training and deployment cycles stay independent from feature releases. The recommendation pipeline starts content-based (embeddings over product attributes) and blends in collaborative signals as interaction data accrues, which is what keeps recommendations useful during the cold-start period. The dynamic pricing module scores price elasticity from historical orders and proposes adjustments inside vendor-defined floors and ceilings, never overriding them.</p>\n<p>Trust and safety work is classifier-first: scam and spam detection run as ensemble classifiers over listing text and user behaviour, with vulnerability scanning handled as a separate pipeline over code and content payloads. Every AI feature ships with an evaluation harness so prompt or model changes are gated on measurable precision before they reach production, and all inference calls pass through a queue with cost metering so experiments cannot silently burn budget.</p>",
+      "cover": "/uploads/portfolio/case-ecommerce.svg",
+      "gallery": [
+        "/uploads/portfolio/case-ecommerce.svg"
+      ],
+      "badges": [
+        {
+          "tone": "danger",
+          "label": "Thesis"
+        },
+        {
+          "tone": "accent",
+          "label": "AI / ML"
+        },
+        {
+          "tone": "warning",
+          "label": "In Development"
+        }
+      ],
+      "tags": [
+        "ai",
+        "thesis",
+        "ecommerce",
+        "ml",
+        "laravel"
+      ],
+      "metrics": [
+        {
+          "label": "Feni University",
+          "value": "Thesis"
+        },
+        {
+          "label": "AI pillars",
+          "value": "3"
+        },
+        {
+          "label": "status",
+          "value": "In Dev"
+        }
+      ],
+      "author_name": "Mohammed Akbar Hossen",
+      "read_minutes": 10,
+      "featured": true,
+      "status": "published",
+      "published_at": "2026-09-08T18:30:45.000000Z",
+      "seo_title": "AI-Powered Multi-Vendor E-Commerce System — Thesis (In Development)",
+      "seo_description": "Feni University thesis: AI-powered multi-vendor e-commerce with recommendations, dynamic pricing, AI assistance and ML-based scam/spam detection.",
+      "sort_order": 4,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Laravel Development",
+      "slug": "laravel-development",
+      "icon": "bi-braces",
+      "icon_tone": "primary",
+      "description": "Modular monoliths, multi-tenancy, upgrades.",
+      "price_from": "$3,500",
+      "group": "build",
+      "sort_order": 1,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 2,
+      "name": "REST API Development",
+      "slug": "rest-api-development",
+      "icon": "bi-plug",
+      "icon_tone": "primary",
+      "description": "Versioned, documented, rate-limited.",
+      "price_from": "$2,200",
+      "group": "build",
+      "sort_order": 2,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 3,
+      "name": "Backend Development",
+      "slug": "backend-development",
+      "icon": "bi-hdd-stack",
+      "icon_tone": "primary",
+      "description": "Services, queues, integrations, jobs.",
+      "price_from": "$2,800",
+      "group": "build",
+      "sort_order": 3,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 4,
+      "name": "SaaS Development",
+      "slug": "saas-development",
+      "icon": "bi-building",
+      "icon_tone": "primary",
+      "description": "Tenants, billing, teams, feature flags.",
+      "price_from": "$6,000",
+      "group": "build",
+      "sort_order": 4,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 5,
+      "name": "AI Integration",
+      "slug": "ai-integration",
+      "icon": "bi-stars",
+      "icon_tone": "accent",
+      "description": "LLM features with evals and cost controls.",
+      "price_from": "$2,500",
+      "group": "intelligence",
+      "sort_order": 5,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 6,
+      "name": "AI Chatbot Development",
+      "slug": "ai-chatbot-development",
+      "icon": "bi-chat-square-text",
+      "icon_tone": "accent",
+      "description": "RAG assistants grounded in your data.",
+      "price_from": "$3,000",
+      "group": "intelligence",
+      "sort_order": 6,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 7,
+      "name": "Recommendation Systems",
+      "slug": "recommendation-systems",
+      "icon": "bi-heart-pulse",
+      "icon_tone": "accent",
+      "description": "Hybrid rankers with cold-start handling.",
+      "price_from": "$4,200",
+      "group": "intelligence",
+      "sort_order": 7,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 8,
+      "name": "ML Pipelines",
+      "slug": "ml-pipelines",
+      "icon": "bi-graph-up-arrow",
+      "icon_tone": "accent",
+      "description": "Feature stores, training, drift monitoring.",
+      "price_from": "$5,000",
+      "group": "intelligence",
+      "sort_order": 8,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 9,
+      "name": "Payment Gateway",
+      "slug": "payment-gateway",
+      "icon": "bi-credit-card-2-front",
+      "icon_tone": "success",
+      "description": "Stripe, bKash, Nagad — retry & reconciliation.",
+      "price_from": "$1,500",
+      "group": "connect",
+      "sort_order": 9,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 10,
+      "name": "Shipping Integration",
+      "slug": "shipping-integration",
+      "icon": "bi-truck",
+      "icon_tone": "success",
+      "description": "Zones, labels, tracking webhooks.",
+      "price_from": "$1,400",
+      "group": "connect",
+      "sort_order": 10,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 11,
+      "name": "Inventory Systems",
+      "slug": "inventory-systems",
+      "icon": "bi-boxes",
+      "icon_tone": "success",
+      "description": "Multi-warehouse, sync, low-stock alerts.",
+      "price_from": "$2,000",
+      "group": "connect",
+      "sort_order": 11,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 12,
+      "name": "Database Design",
+      "slug": "database-design",
+      "icon": "bi-database",
+      "icon_tone": "success",
+      "description": "Schema, indexes, migrations, audits.",
+      "price_from": "$1,200",
+      "group": "connect",
+      "sort_order": 12,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 13,
+      "name": "Performance Optimization",
+      "slug": "performance-optimization",
+      "icon": "bi-speedometer2",
+      "icon_tone": "danger",
+      "description": "p95 budgets, cache strategy, Octane.",
+      "price_from": "$1,800",
+      "group": "sustain",
+      "sort_order": 13,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 14,
+      "name": "Bug Fixing",
+      "slug": "bug-fixing",
+      "icon": "bi-bug",
+      "icon_tone": "danger",
+      "description": "Reproduce, fix, regression-test, document.",
+      "price_from": "$300",
+      "group": "sustain",
+      "sort_order": 14,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 15,
+      "name": "Code Review",
+      "slug": "code-review",
+      "icon": "bi-search",
+      "icon_tone": "danger",
+      "description": "Architecture audit with written risk register.",
+      "price_from": "$600",
+      "group": "sustain",
+      "sort_order": 15,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 16,
+      "name": "Consultation",
+      "slug": "consultation",
+      "icon": "bi-headset",
+      "icon_tone": "danger",
+      "description": "Roadmap, stack choice, hiring guidance.",
+      "price_from": "$120 / hour",
+      "group": "sustain",
+      "sort_order": 16,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    }
+  ],
+  "pricing_plans": [
+    {
+      "id": 1,
+      "name": "Starter",
+      "price": "$900",
+      "period": "/project",
+      "tagline": "Perfect for fixes, integrations and small features.",
+      "features": [
+        "1 module or integration",
+        "1-week delivery",
+        "Unit tests included",
+        "15 days support"
+      ],
+      "featured": false,
+      "cta_label": "Get started",
+      "cta_route": "portfolio.contact",
+      "sort_order": 1,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "Growth",
+      "price": "$4,500",
+      "period": "/project",
+      "tagline": "Full products: SaaS apps, APIs, AI features.",
+      "features": [
+        "Up to 6 modules",
+        "4–8 week delivery",
+        "Architecture docs + ADRs",
+        "CI/CD & load testing",
+        "60 days support"
+      ],
+      "featured": true,
+      "cta_label": "Start a project",
+      "cta_route": "portfolio.contact",
+      "sort_order": 2,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "Scale",
+      "price": "$2,800",
+      "period": "/month",
+      "tagline": "Ongoing partnership for evolving platforms.",
+      "features": [
+        "Dedicated weekly capacity",
+        "24h response SLA",
+        "Monitoring & on-call",
+        "Quarterly architecture reviews"
+      ],
+      "featured": false,
+      "cta_label": "Book a call",
+      "cta_route": "portfolio.contact",
+      "sort_order": 3,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Mitchell",
+      "role": "CTO",
+      "company": "NexaCommerce",
+      "avatar": "/uploads/portfolio/avatar.svg",
+      "quote": "Arif rebuilt our checkout in six weeks. Conversion jumped 31% and our deploy dread disappeared — his test coverage is the best I've seen in a contractor.",
+      "rating": 5,
+      "sort_order": 1,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "Daniel Osei",
+      "role": "Head of Security",
+      "company": "TrustLayer",
+      "avatar": "/uploads/portfolio/avatar.svg",
+      "quote": "The threat-detection system he built flags fraud faster than our old manual team of six. It paid for itself in the first month. Ridiculous ROI.",
+      "rating": 5,
+      "sort_order": 2,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "Nadia Karim",
+      "role": "COO",
+      "company": "Meridian Textiles",
+      "avatar": "/uploads/portfolio/avatar.svg",
+      "quote": "Communication was Stripe-grade: weekly demos, written decisions, honest estimates. Our attendance platform now runs across 40 factories without a hiccup.",
+      "rating": 5,
+      "sort_order": 3,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 4,
+      "name": "Marcus Lee",
+      "role": "Product Lead",
+      "company": "ShipRoute",
+      "avatar": "/uploads/portfolio/avatar.svg",
+      "quote": "He took our API from 1.8s p95 to 220ms. Then documented everything so well that our internal team ships features without him — which is exactly what we hired him for.",
+      "rating": 5,
+      "sort_order": 4,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 5,
+      "name": "Elena Petrova",
+      "role": "Founder",
+      "company": "Cartwise AI",
+      "avatar": "/uploads/portfolio/avatar.svg",
+      "quote": "The AI recommendation engine felt like magic until he walked us through the architecture — then it felt inevitable. Clearest technical thinking I've encountered.",
+      "rating": 5,
+      "sort_order": 5,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 6,
+      "name": "Tomás Rivera",
+      "role": "CEO",
+      "company": "BrightLMS",
+      "avatar": "/uploads/portfolio/avatar.svg",
+      "quote": "Third project together and counting. He estimates honestly, flags risks early, and leaves codebases better than he found them. Rare combination.",
+      "rating": 5,
+      "sort_order": 6,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    }
+  ],
+  "experiences": [
+    {
+      "id": 1,
+      "role_title": "Backend / Full-Stack Developer",
+      "company": "BugBuild",
+      "location": "Bangladesh",
+      "period_start": "2026",
+      "period_end": "Present",
+      "is_current": true,
+      "description": "Contribute as part of a company product team to a portfolio of live Laravel products spanning multi-vendor e-commerce, delivery logistics, subscription commerce, job platforms, healthcare directories, and education portals. Design and implement RESTful APIs (including versioned v10 API) consumed by both server-rendered Laravel apps and a separate Next.js storefront. Build seller, inventory, warehouse, order, payment, wallet, and finance workflows. Implement authentication flows including OTP, social login, and Google reCAPTCHA (session- and token-based). Diagnose and resolve issues across Laravel, PHP, database, deployment, and environment layers. Collaborate using Git-based workflows within a multi-engineer product team.",
+      "tags": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "REST API",
+        "Next.js",
+        "Redis",
+        "Git"
+      ],
+      "tone": "primary",
+      "sort_order": 1,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    }
+  ],
+  "educations": [
+    {
+      "id": 1,
+      "degree": "Bachelor of Science in Computer Science & Engineering",
+      "institution": "Feni University · CGPA: 3.60",
+      "period": "2022 — 2026",
+      "icon": "bi-mortarboard-fill",
+      "tone": "primary",
+      "description": "Final-year CSE student · Thesis: AI-Powered Multi-Vendor E-Commerce System · Relevant coursework: Software Engineering, Web Development, Database Systems, Computer Networks, Information Security, Artificial Intelligence, Machine Learning",
+      "sort_order": 1,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    }
+  ],
+  "milestones": [
+    {
+      "id": 1,
+      "period": "2022",
+      "title": "Started B.Sc. in CSE — Feni University",
+      "description": "Began Computer Science & Engineering. Focus: software engineering, web development, databases, networks & security.",
+      "is_current": false,
+      "sort_order": 1,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 2,
+      "period": "2022 — 2026",
+      "title": "JobNect & ParcelFly",
+      "description": "Contributed to job marketplace and delivery management systems — marketplace workflows, logistics & COD finance.",
+      "is_current": false,
+      "sort_order": 2,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 3,
+      "period": "2024 — 2026",
+      "title": "Subsify & Healthcare",
+      "description": "Built subscription marketplace and Feni Doctor Info — digital products, healthcare discovery & appointment flows.",
+      "is_current": false,
+      "sort_order": 3,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 4,
+      "period": "2026",
+      "title": "Joined BugBuild",
+      "description": "Backend / Full-Stack Developer on live Laravel products — Sellino, Baillows, PGHSF Education Portal & platform APIs.",
+      "is_current": false,
+      "sort_order": 4,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 5,
+      "period": "2026 — Present",
+      "title": "Thesis: AI-Powered E-Commerce",
+      "description": "ML for personalized recommendations, dynamic pricing, AI assistance and detection of scams/spam/vulnerabilities.",
+      "is_current": true,
+      "sort_order": 5,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "What does a typical engagement look like?",
+      "answer": "A 1-week discovery sprint (goals, scope, fixed quote), then 2-week iterations with a live staging URL from day three, a Friday demo and a written changelog. You see progress weekly, not at the end.",
+      "sort_order": 1,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 2,
+      "question": "How do you price projects?",
+      "answer": "Fixed price for well-defined scopes, weekly retainers for evolving products. Every quote is itemized by module, so you can trim scope without renegotiating everything.",
+      "sort_order": 2,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 3,
+      "question": "Can you take over an existing Laravel codebase?",
+      "answer": "Yes — it's most of my work. I start with an architecture audit and a risk register, add test coverage around critical paths, then refactor incrementally. No big-bang rewrites.",
+      "sort_order": 3,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 4,
+      "question": "Do you provide post-launch support?",
+      "answer": "Every build includes 30 days of free fixes. After that, maintenance plans cover security patches, dependency upgrades, monitoring and a guaranteed response SLA.",
+      "sort_order": 4,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 5,
+      "question": "How do you handle AI costs and hallucinations?",
+      "answer": "Token budgets and caching are designed in from the start, every LLM feature ships with an eval suite, and high-stakes outputs get guardrails — structured outputs, retrieval grounding and human-in-the-loop review where it matters.",
+      "sort_order": 5,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 6,
+      "question": "Who owns the code?",
+      "answer": "You do — 100%. Full repository access from the first commit, infrastructure in your accounts, and a handover document your next engineer will actually enjoy reading.",
+      "sort_order": 6,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    }
+  ],
+  "team": [
+    {
+      "id": 1,
+      "name": "Akbar",
+      "slug": "akbar",
+      "role": "Founder & Lead Developer",
+      "department": "Leadership",
+      "bio": "Full-stack Laravel developer leading product architecture, API design and delivery. Focused on reliable, maintainable web products built collaboratively as a small senior team.",
+      "photo": null,
+      "email": "mdakbar758742@gmail.com",
+      "phone": "+880 1814-758742",
+      "location": "Dhaka, Bangladesh",
+      "linkedin_url": "https://linkedin.com/in/akbar",
+      "twitter_url": "https://x.com/akbar",
+      "github_url": "https://github.com/Akbar758742",
+      "website_url": "https://akbar.dev",
+      "sort_order": 1,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "Arman Abir",
+      "slug": "arman-abir",
+      "role": "Flutter Developer",
+      "department": "Mobile Development",
+      "bio": "Flutter & Dart specialist building polished cross-platform apps for iOS & Android. Offline-first, Bloc/Riverpod state management, native plugins, Figma-to-Flutter pixel fidelity, and performance profiling in production.",
+      "photo": null,
+      "email": "arman.abir@example.com",
+      "phone": "+880 1711-000003",
+      "location": "Dhaka, Bangladesh",
+      "linkedin_url": "#",
+      "twitter_url": null,
+      "github_url": "https://github.com/armanabir2000",
+      "website_url": "https://armanabir2000.github.io/flutter_portfolio/",
+      "sort_order": 2,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "MH Sahin",
+      "slug": "mh-sahin",
+      "role": "Frontend Developer",
+      "department": "Frontend Engineering",
+      "bio": "Frontend engineer focused on React, Next.js & TypeScript. Builds accessible, high-performance UIs with Tailwind CSS, component systems, and seamless Laravel API integration — Lighthouse 95+ on every release.",
+      "photo": null,
+      "email": "mh.sahin@example.com",
+      "phone": "+880 1711-000004",
+      "location": "Dhaka, Bangladesh",
+      "linkedin_url": "https://linkedin.com/in/mh-sahin",
+      "twitter_url": null,
+      "github_url": "https://github.com/mobarak05",
+      "website_url": "#",
+      "sort_order": 3,
+      "is_active": true,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z"
+    }
+  ],
+  "blog_categories": [
+    {
+      "id": 4,
+      "name": "Laravel",
+      "slug": "laravel",
+      "description": "Articles about Laravel.",
+      "is_active": true,
+      "sort_order": 0,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 1,
+      "name": "Technology",
+      "slug": "technology",
+      "description": "Product updates, platform news, and technical deep dives.",
+      "is_active": true,
+      "sort_order": 1,
+      "created_at": "2026-09-13T16:08:09.000000Z",
+      "updated_at": "2026-09-13T16:08:09.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 5,
+      "name": "AI",
+      "slug": "ai",
+      "description": "Articles about AI.",
+      "is_active": true,
+      "sort_order": 1,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 2,
+      "name": "News",
+      "slug": "news",
+      "description": "Announcements and company updates.",
+      "is_active": true,
+      "sort_order": 2,
+      "created_at": "2026-09-13T16:08:09.000000Z",
+      "updated_at": "2026-09-13T16:08:09.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 6,
+      "name": "DevOps",
+      "slug": "devops",
+      "description": "Articles about DevOps.",
+      "is_active": true,
+      "sort_order": 2,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 3,
+      "name": "Insights",
+      "slug": "insights",
+      "description": "Thought leadership and best practices.",
+      "is_active": true,
+      "sort_order": 3,
+      "created_at": "2026-09-13T16:08:09.000000Z",
+      "updated_at": "2026-09-13T16:08:09.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 7,
+      "name": "Architecture",
+      "slug": "architecture",
+      "description": "Articles about Architecture.",
+      "is_active": true,
+      "sort_order": 3,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 8,
+      "name": "Career",
+      "slug": "career",
+      "description": "Articles about Career.",
+      "is_active": true,
+      "sort_order": 4,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T16:08:10.000000Z",
+      "deleted_at": null
+    }
+  ],
+  "tags": [
+    {
+      "slug": "api",
+      "name": "Api"
+    },
+    {
+      "slug": "career",
+      "name": "Career"
+    },
+    {
+      "slug": "deployment",
+      "name": "Deployment"
+    },
+    {
+      "slug": "design",
+      "name": "Design"
+    },
+    {
+      "slug": "freelance",
+      "name": "Freelance"
+    },
+    {
+      "slug": "horizon",
+      "name": "Horizon"
+    },
+    {
+      "slug": "javascript",
+      "name": "JavaScript"
+    },
+    {
+      "slug": "laravel",
+      "name": "Laravel"
+    },
+    {
+      "slug": "octane",
+      "name": "Octane"
+    },
+    {
+      "slug": "open-source",
+      "name": "Open Source"
+    },
+    {
+      "slug": "performance",
+      "name": "Performance"
+    },
+    {
+      "slug": "php",
+      "name": "PHP"
+    },
+    {
+      "slug": "productivity",
+      "name": "Productivity"
+    },
+    {
+      "slug": "queues",
+      "name": "Queues"
+    },
+    {
+      "slug": "rag",
+      "name": "Rag"
+    },
+    {
+      "slug": "redis",
+      "name": "Redis"
+    },
+    {
+      "slug": "security",
+      "name": "Security"
+    },
+    {
+      "slug": "testing",
+      "name": "Testing"
+    }
+  ],
+  "blog_posts": [
+    {
+      "id": 3,
+      "title": "Building Reusable Admin Modules",
+      "slug": "building-reusable-admin-modules",
+      "excerpt": "The repository pattern that keeps every admin section consistent and portable.",
+      "content": "Every module in this starter kit follows the same shape: a repository interface and implementation, a thin controller, form requests, and Blade views for list, create, and edit.\n\nRepositories return a uniform response envelope, which keeps controllers small and lets the same code power both regular form posts and AJAX requests.\n\nThe result is a codebase where adding a new resource is mostly mechanical — and the module can be lifted into another project with minimal changes.",
+      "gallery": null,
+      "featured_image": null,
+      "status": "published",
+      "published_at": "2026-09-11T18:30:45.000000Z",
+      "user_id": 1,
+      "blog_category_id": 3,
+      "views": 54,
+      "meta_title": null,
+      "meta_description": null,
+      "created_at": "2026-09-13T16:08:09.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null,
+      "category": {
+        "name": "Insights",
+        "slug": "insights"
+      },
+      "tags": [
+        {
+          "name": "PHP",
+          "slug": "php"
+        },
+        {
+          "name": "Productivity",
+          "slug": "productivity"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Getting Started with Laravel 12",
+      "slug": "getting-started-with-laravel-12",
+      "excerpt": "From installation to your first route — a practical introduction to Laravel 12.",
+      "content": "Laravel 12 keeps the framework lean while making common tasks even more pleasant. The routing, Eloquent ORM, and validation layers remain the heart of every application.\n\nA great way to learn is to build something small end to end: a model, a migration, a controller, and a Blade view. The starter kit modules follow exactly that shape.\n\nOnce the basics feel comfortable, explore features like queues, notifications, and the built-in activity logging used across this admin panel.",
+      "gallery": null,
+      "featured_image": null,
+      "status": "published",
+      "published_at": "2026-09-09T18:30:45.000000Z",
+      "user_id": 1,
+      "blog_category_id": 1,
+      "views": 96,
+      "meta_title": null,
+      "meta_description": null,
+      "created_at": "2026-09-13T16:08:09.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null,
+      "category": {
+        "name": "Technology",
+        "slug": "technology"
+      },
+      "tags": [
+        {
+          "name": "PHP",
+          "slug": "php"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Welcome to Your Starter Kit Blog",
+      "slug": "welcome-to-your-starter-kit-blog",
+      "excerpt": "A quick tour of the built-in blog module and what you can do with it.",
+      "content": "This starter kit ships with a complete blog module out of the box. You can manage posts, blog categories, and tags entirely from the admin panel.\n\nEvery post supports draft and published states, a featured image, SEO metadata, and an unlimited number of tags. Posts are soft-deleted, so nothing is ever lost by accident.\n\nOpen the Posts page to create your first article — the module is ready to use right now.",
+      "gallery": null,
+      "featured_image": null,
+      "status": "published",
+      "published_at": "2026-09-07T18:30:45.000000Z",
+      "user_id": 1,
+      "blog_category_id": 2,
+      "views": 128,
+      "meta_title": null,
+      "meta_description": null,
+      "created_at": "2026-09-13T16:08:09.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null,
+      "category": {
+        "name": "News",
+        "slug": "news"
+      },
+      "tags": [
+        {
+          "name": "PHP",
+          "slug": "php"
+        },
+        {
+          "name": "Open Source",
+          "slug": "open-source"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Scaling Laravel Queues to 1M Jobs a Day",
+      "slug": "scaling-laravel-queues-to-1m-jobs-a-day",
+      "excerpt": "Horizon tuning, batching, rate limits and the dead-letter patterns that saved our SLA.",
+      "content": "<p>Last October, a marketing push sent our order volume from 35k to over a million queue jobs per day. Nothing broke — because the boring decisions we'd made months earlier quietly did their job. Here's the whole playbook.</p><h2>1. Give every queue a budget</h2><p>We split one default queue into seven named queues — orders, emails, webhooks, ai-jobs, exports, imports, maintenance — each with its own worker pool and concurrency ceiling. A stuck export can no longer starve checkout emails.</p><pre class=\"code-block\"><code>'environments' =&gt; [ 'production' =&gt; [ 'orders' =&gt; ['processes' =&gt; 12, 'tries' =&gt; 3], 'ai-jobs' =&gt; ['processes' =&gt; 4, 'timeout' =&gt; 90], ] ]</code></pre><h2>2. Batching is a superpower — with guardrails</h2><p>Laravel's Bus::batch() turned our 40k-row catalog re-embedding from a 6-hour crawl into a 22-minute job with progress tracking. The guardrail: batches get a <em>concurrency allowance</em>, not unlimited parallelism.</p><blockquote>\"Queues are a promise, not a dumpster. If you can't describe a job's failure mode in one sentence, it's not ready for production.\"</blockquote><h2>3. Dead letters are a feature</h2><p>Every queue routes permanent failures to a failed_* mirror with the full payload. A daily job digests them, groups by exception class, and posts a digest to Slack.</p><p>The unsexy truth: scaling queues is mostly about <em>boundaries</em> — named queues, rate limits, idempotent handlers and a paper trail for failures.</p>",
+      "gallery": null,
+      "featured_image": "/uploads/portfolio/featured-queues.svg",
+      "status": "published",
+      "published_at": "2026-08-14T18:30:45.000000Z",
+      "user_id": 1,
+      "blog_category_id": 4,
+      "views": 10454,
+      "meta_title": null,
+      "meta_description": null,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null,
+      "category": {
+        "name": "Laravel",
+        "slug": "laravel"
+      },
+      "tags": [
+        {
+          "name": "Laravel",
+          "slug": "laravel"
+        },
+        {
+          "name": "Queues",
+          "slug": "queues"
+        },
+        {
+          "name": "Horizon",
+          "slug": "horizon"
+        },
+        {
+          "name": "Redis",
+          "slug": "redis"
+        },
+        {
+          "name": "Performance",
+          "slug": "performance"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "RAG in Production: Embeddings That Don't Lie",
+      "slug": "rag-in-production-embeddings-that-dont-lie",
+      "excerpt": "Chunking strategies, hybrid search and eval loops for LLM features users can trust.",
+      "content": "<p>RAG is the easiest architecture to demo and the hardest to keep honest. Chunking strategies, hybrid search (BM25 + embeddings), and an eval loop that measures groundedness before users ever do.</p><h2>Chunking that respects structure</h2><p>Naive fixed-size chunks break headings, tables and context. We chunk on semantic boundaries and keep a parent-child retriever so answers can cite whole sections.</p><h2>Hybrid search wins</h2><p>Pure vector search misses exact keywords. A reciprocal-rank fusion of BM25 and vector scores consistently beats either alone in our evals.</p><h2>Evals in CI</h2><p>Every prompt change runs a 300-case suite measuring answer relevance, groundedness and latency. If it regresses, the deploy fails.</p>",
+      "gallery": null,
+      "featured_image": "/uploads/portfolio/blog-rag.svg",
+      "status": "published",
+      "published_at": "2026-07-30T18:30:45.000000Z",
+      "user_id": 1,
+      "blog_category_id": 5,
+      "views": 1823,
+      "meta_title": null,
+      "meta_description": null,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null,
+      "category": {
+        "name": "AI",
+        "slug": "ai"
+      },
+      "tags": [
+        {
+          "name": "Performance",
+          "slug": "performance"
+        },
+        {
+          "name": "Rag",
+          "slug": "rag"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Anatomy of a 200ms API Endpoint",
+      "slug": "anatomy-of-a-200ms-api-endpoint",
+      "excerpt": "Query plans, cache stampedes and Octane — a trace-by-trace teardown of latency.",
+      "content": "<p>Where does 200ms actually go? Usually not where you think. This is a trace-by-trace teardown of a real endpoint: connection pool, query plans, N+1s hiding in serializers, cache stampedes, and the Octane config that shaved the last 40ms.</p><h2>Measure before you optimize</h2><p>We added request tracing with exact per-layer timings. The first finding: 60% of the time was in Eloquent hydration — not the database.</p><h2>The fixes</h2><p>Selective columns, eager loading, and a tagged cache with probabilistic early expiration to kill stampedes.</p>",
+      "gallery": null,
+      "featured_image": "/uploads/portfolio/blog-api.svg",
+      "status": "published",
+      "published_at": "2026-07-15T18:30:45.000000Z",
+      "user_id": 1,
+      "blog_category_id": 7,
+      "views": 1233,
+      "meta_title": null,
+      "meta_description": null,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null,
+      "category": {
+        "name": "Architecture",
+        "slug": "architecture"
+      },
+      "tags": [
+        {
+          "name": "Performance",
+          "slug": "performance"
+        },
+        {
+          "name": "Api",
+          "slug": "api"
+        },
+        {
+          "name": "Octane",
+          "slug": "octane"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Zero-Downtime Deploys with Octane + ECS",
+      "slug": "zero-downtime-deploys-with-octane-ecs",
+      "excerpt": "Blue/green flow, expand-contract migrations, warm caches.",
+      "content": "<p>Deploys should be boring. Blue/green on ECS, expand-contract migrations so rollbacks are safe, and cache warming so the first request after deploy isn't the slowest.</p><h2>The flow</h2><p>Build once, push image, spin up the new fleet, run migrations in expand phase, shift traffic, drain and decommission the old fleet. All scripted, all tested.</p>",
+      "gallery": null,
+      "featured_image": "/uploads/portfolio/blog-deploy.svg",
+      "status": "published",
+      "published_at": "2026-06-30T18:30:45.000000Z",
+      "user_id": 1,
+      "blog_category_id": 6,
+      "views": 11100,
+      "meta_title": null,
+      "meta_description": null,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null,
+      "category": {
+        "name": "DevOps",
+        "slug": "devops"
+      },
+      "tags": [
+        {
+          "name": "Octane",
+          "slug": "octane"
+        },
+        {
+          "name": "Deployment",
+          "slug": "deployment"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "A Testing Strategy Teams Actually Keep",
+      "slug": "a-testing-strategy-teams-actually-keep",
+      "excerpt": "Feature-first pyramids, contract tests and CI budgets.",
+      "content": "<p>Test suites die when they feel like homework. A strategy teams keep: write tests at the level of the feature, keep the pyramid honest with coverage budgets per module, and use contract tests at service boundaries so microservices don't drift.</p><h2>Budgets beat vibes</h2><p>CI fails if critical-path coverage drops. Simple, and it settles every debate about what to test.</p>",
+      "gallery": null,
+      "featured_image": "/uploads/portfolio/blog-testing.svg",
+      "status": "published",
+      "published_at": "2026-06-10T18:30:45.000000Z",
+      "user_id": 1,
+      "blog_category_id": 7,
+      "views": 4858,
+      "meta_title": null,
+      "meta_description": null,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null,
+      "category": {
+        "name": "Architecture",
+        "slug": "architecture"
+      },
+      "tags": [
+        {
+          "name": "Performance",
+          "slug": "performance"
+        },
+        {
+          "name": "Testing",
+          "slug": "testing"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Six Years of Freelance Engineering, Systematized",
+      "slug": "six-years-of-freelance-engineering-systematized",
+      "excerpt": "Contracts, discovery sprints and saying no profitably.",
+      "content": "<p>Six years of freelancing taught me that the business is the engineering. Discovery sprints, written decision records, and the polite but firm 'no' are what make projects profitable and relationships long.</p><h2>The system</h2><p>Every engagement: fixed discovery sprint → written scope → weekly demo → written changelog → 30 days of fixes. Repeatable, predictable, and boring in the best way.</p>",
+      "gallery": null,
+      "featured_image": "/uploads/portfolio/blog-freelance.svg",
+      "status": "published",
+      "published_at": "2026-05-26T18:30:45.000000Z",
+      "user_id": 1,
+      "blog_category_id": 8,
+      "views": 7337,
+      "meta_title": null,
+      "meta_description": null,
+      "created_at": "2026-09-13T16:08:10.000000Z",
+      "updated_at": "2026-09-13T18:30:45.000000Z",
+      "deleted_at": null,
+      "category": {
+        "name": "Career",
+        "slug": "career"
+      },
+      "tags": [
+        {
+          "name": "Freelance",
+          "slug": "freelance"
+        },
+        {
+          "name": "Career",
+          "slug": "career"
+        }
+      ]
+    }
+  ]
+}

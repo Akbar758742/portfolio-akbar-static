@@ -1,0 +1,166 @@
+/* ==========================================================================
+   variables.css - design tokens
+   Every value here was MEASURED from the live site (computed styles, rendered
+   pixels, asset averages) rather than inferred. Sources are noted per token.
+   The live page is a LIGHT page: every section samples #f5f4f2 with #0a0a0a
+   text, and the page's own <meta name="theme-color"> is #f5f4f2.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* --- surfaces --- */
+  --bg: #f5f4f2;          /* page ground. measured rgb(245,244,242) */
+  --bg-deep: #efedea;     /* recessed band, one step down from the ground */
+  --surface: #ffffff;     /* cards and panels. measured on the live page */
+  --surface-2: #eceae6;   /* interactive step: hover, pressed, inset wells */
+  --stone: #e9e4de;       /* hero ground. measured average of the hero photo */
+  --ink-fill: #0a0a0a;    /* primary button and nav pill fill. measured */
+  --code-bg: #1a1a1a;     /* install command block. measured */
+  --code-text: #f5f4f2;   /* 15.8:1 on --code-bg */
+
+  /* --- text ---
+     The live site has no grey ladder: its text tokens are all a warm
+     near-black (#0a0a0a, #080000, #1b0000, #230000, #300000, #420000) and
+     hierarchy comes from size and weight. Those measured values are kept for
+     the top two tiers; the lower two are solved so they still clear AA on the
+     lightest surface they are actually used on. */
+  --text: #0a0a0a;        /* measured. 18.0:1 on --bg, 19.8:1 on --surface */
+  --text-warm: #230000;   /* measured. warm near-black for body copy */
+  --muted: #5f5850;       /* solved. 6.3:1 on --bg */
+  --faint: #726a62;       /* solved. 4.8:1 on --bg, the AA floor */
+  --on-accent: #0a0a0a;   /* 7.3:1 on --accent */
+  --on-ink: #ffffff;      /* 19.8:1 on --ink-fill */
+
+  /* --- borders --- */
+  --line: #e5e5e5;        /* measured: the live page uses border-neutral-200 */
+  --line-strong: #d5d1cc; /* panel and secondary-button definition */
+  --line-control: #7a7a7a;/* icon-only controls: the border is the only
+                             affordance, so it carries 3.02:1 (WCAG 1.4.11) */
+
+  /* --- accent ---
+     #ff6b00 is measured ("Less slop, designs pop."). It is only 2.6:1 on the
+     ground, so it is used for display type and on dark fills; --accent-text is
+     the solved text-safe variant. */
+  --accent: #ff6b00;
+  /* Solved against the darkest ground accent text lands on (--stone, the hero),
+     not just the page canvas: 4.67:1 on --stone, 5.41:1 on --bg, 5.90:1 on
+     --surface. The live site uses the raw accent here, which is 2.4:1. */
+  --accent-text: #ac4300;
+  --accent-wash: rgb(255 107 0 / 8%);
+  --accent-line: rgb(255 107 0 / 30%);
+
+  /* --- secondary brand tones, both measured --- */
+  --gold: #8a651f;        /* mono sponsor labels. 4.8:1 on --bg */
+  --violet-wash: rgb(64 55 73 / 8%); /* the hero release chip fill */
+
+  /* --- type ---
+     Measured families. Manrope carries almost everything, IBM Plex Mono
+     carries the uppercase micro-labels, and Playfair Display appears exactly
+     once, on the hero's positioning line. */
+  --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+    Consolas, "Liberation Mono", monospace;
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+
+  /* Display sizes are measured: 72px hero and section heads, 96px for the
+     loudest one, 60px for the quieter ones, 36px for the smallest. */
+  --fs-display-1: clamp(2.75rem, 5vw, 4.5rem);    /* 44 -> 72px */
+  --fs-display-2: clamp(2.25rem, 5.6vw, 6rem);    /* 36 -> 96px */
+  --fs-display-3: clamp(1.75rem, 3.6vw, 3.75rem); /* 28 -> 60px */
+  --fs-display-4: clamp(1.5rem, 2.2vw, 2.25rem);  /* 24 -> 36px: "Sponsored by" */
+  --fs-h3: 1.125rem;                              /* 18px, measured */
+  --fs-body: 0.9375rem;                           /* 15px; live band is 14-16px */
+  --fs-body-sm: 0.875rem;                         /* 14px */
+  --fs-small: 0.8125rem;                          /* 13px */
+  --fs-label: 0.75rem;                            /* 12px mono label, measured */
+  --fs-micro: 0.6875rem;                          /* 11px */
+  --fs-code: 0.8125rem;
+
+  --lh-display: 0.95;  /* measured: 72px type sits on 68.4px */
+  --lh-heading: 1.1;
+  --lh-body: 1.65;
+
+  --tracking-display: -0.025em; /* measured: 72px type carries -1.8px */
+  --tracking-heading: -0.02em;
+  --tracking-label: 0.16em;     /* measured: 12px mono carries +1.92px */
+
+  --measure: 68ch;
+  --measure-muted: 60ch;
+  --measure-card: 46ch;
+
+  /* --- space --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 2rem;
+  --space-8: 2.5rem;
+  --space-9: 3rem;
+  --space-10: 4rem;
+  --space-11: 5rem;
+  --space-12: 7rem;
+
+  --container: 1220px;      /* measured: the live hero field caps at max-w-[1220px] */
+  --gutter: 1.25rem;
+  --section-y: clamp(4rem, 8vw, 6.5rem);
+  --section-y-tight: clamp(2.75rem, 5vw, 4rem);
+  --header-h: 4.25rem;
+  --btn-h: 3.5rem;          /* measured: the live CTAs are 56px tall */
+
+  /* --- shape ---
+     Measured: 16px dominates, 24px on large panels, 18px on hero tiles, pills
+     on chips. */
+  --radius-sm: 8px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-tile: 18px;
+  --radius-pill: 999px;
+
+  /* --- motion --- */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 160ms;
+  --dur: 200ms;
+  --dur-slow: 480ms;
+
+  /* --- z-index scale --- */
+  --z-copy: 2;
+  --z-header: 100;
+  --z-skip: 200;
+
+  /* --- hero field ---
+     Measured: the live stage sets perspective: 3400px and the grab layer's
+     matrix3d decomposes to rotateY(4deg) rotateX(3deg). That rotation is what
+     makes the tiles read as circling rather than sliding. */
+  --hero-perspective: 3400px;
+  --hero-rotate-y: 4deg;
+  --hero-rotate-x: 3deg;
+  --hero-glow: radial-gradient(
+    60% 55% at 30% 22%,
+    rgb(255 255 255 / 85%),
+    rgb(255 255 255 / 0%) 70%
+  );
+
+  /* --- Bootstrap bridges --- */
+  --bs-body-bg: var(--bg);
+  --bs-body-color: var(--text);
+  --bs-body-font-family: var(--font-sans);
+  --bs-body-font-size: var(--fs-body);
+  --bs-body-line-height: var(--lh-body);
+  --bs-font-monospace: var(--font-mono);
+  --bs-border-color: var(--line);
+  --bs-border-radius: var(--radius);
+  --bs-link-color: var(--accent-text);
+  --bs-link-color-rgb: 172, 67, 0;
+  --bs-link-hover-color: var(--text);
+  --bs-code-color: var(--accent-text);
+  --bs-emphasis-color: var(--text);
+  --bs-secondary-color: var(--muted);
+  --bs-heading-color: var(--text);
+  --bs-focus-ring-color: var(--accent-text);
+  --bs-focus-ring-width: 2px;
+  --bs-focus-ring-offset: 2px;
+}

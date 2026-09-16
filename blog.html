@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f5f4f2">
+
+  <title>Blog | Mohammed Akbar Hossen</title>
+  <meta name="description" content="Notes on Laravel, APIs and AI in production.">
+  <meta name="author" content="Mohammed Akbar Hossen">
+  <link rel="canonical" href="https://akbar758742.github.io/portfolio/blog.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog | Mohammed Akbar Hossen">
+  <meta property="og:description" content="Notes on Laravel, APIs and AI in production.">
+  <meta property="og:url" content="https://akbar758742.github.io/portfolio/blog.html">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Playfair+Display:ital,wght@0,500;1,500&amp;display=swap">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+  
+  <svg class="visually-hidden" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h13"></path><path d="m12 6 6 6-6 6"></path></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M8 16 16 8"></path><path d="M9.5 8H16v6.5"></path></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2.5"></rect><path d="M15 5.5A2.5 2.5 0 0 0 12.5 3h-7A2.5 2.5 0 0 0 3 5.5v7A2.5 2.5 0 0 0 5.5 15"></path></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 5 5 10-11"></path></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6"></path></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12"></path><path d="M18 6 6 18"></path></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announce">
+    <div class="container">
+      <a class="announce__link" href="contact.html">
+        <span class="tag announce__chip">Available for freelance — Q3 2026</span>
+        <span>Currently booking 2 project slots for Q3 2026</span>
+        <svg class="icon icon--xs announce__arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-sentinel" data-header-sentinel aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span class="brand__initials" aria-hidden="true">MA</span>
+          <span>Mohammed Akbar Hossen</span>
+        </a>
+
+        <div class="nav__panel" id="nav-panel">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link" href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a class="nav__link" href="skills.html">Skills</a>
+            </li>
+            <li>
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li>
+              <a class="nav__link" href="experience.html">Experience</a>
+            </li>
+            <li>
+              <a class="nav__link" aria-current="true" href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a class="nav__link" href="about.html">About</a>
+            </li>
+          </ul>
+
+          <div class="nav__actions">
+            <a class="btn btn-outline btn--sm" href="https://github.com/Akbar758742" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-primary btn--sm" href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu" data-nav-toggle>
+          <svg class="icon nav__toggle-icon--open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-menu"></use></svg>
+          <svg class="icon nav__toggle-icon--close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title" data-reveal>Writing about the <em>craft</em>.</h1>
+        <p class="page-hero__lede" data-reveal>Notes on Laravel, APIs, AI in production and the freelance business.</p>
+        
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="All posts">
+      <div class="container">
+        <div class="row grid-regular projects__grid" data-reveal-group>
+          <div class="col-12 col-md-6" data-reveal>
+            <article class="media-card">
+              <a class="media-card__link" href="blog/building-reusable-admin-modules.html">
+                <div class="media-card__media">
+                  <img src="" alt="The repository pattern that keeps every admin section consistent and portable." width="1200" height="750" loading="lazy" decoding="async">
+                </div>
+                <div class="media-card__body">
+                  <h3 class="media-card__name">Building Reusable Admin Modules</h3>
+                  <span class="tag">Insights &amp;middot; Sep 12, 2026 &amp;middot; 1 min read</span>
+                </div>
+              </a>
+            </article>
+            <p class="project-card-meta">The repository pattern that keeps every admin section consistent and portable.</p>
+          </div>
+          <div class="col-12 col-md-6" data-reveal>
+            <article class="media-card">
+              <a class="media-card__link" href="blog/getting-started-with-laravel-12.html">
+                <div class="media-card__media">
+                  <img src="" alt="From installation to your first route — a practical introduction to Laravel 12." width="1200" height="750" loading="lazy" decoding="async">
+                </div>
+                <div class="media-card__body">
+                  <h3 class="media-card__name">Getting Started with Laravel 12</h3>
+                  <span class="tag">Technology &amp;middot; Sep 10, 2026 &amp;middot; 1 min read</span>
+                </div>
+              </a>
+            </article>
+            <p class="project-card-meta">From installation to your first route — a practical introduction to Laravel 12.</p>
+          </div>
+          <div class="col-12 col-md-6" data-reveal>
+            <article class="media-card">
+              <a class="media-card__link" href="blog/welcome-to-your-starter-kit-blog.html">
+                <div class="media-card__media">
+                  <img src="" alt="A quick tour of the built-in blog module and what you can do with it." width="1200" height="750" loading="lazy" decoding="async">
+                </div>
+                <div class="media-card__body">
+                  <h3 class="media-card__name">Welcome to Your Starter Kit Blog</h3>
+                  <span class="tag">News &amp;middot; Sep 8, 2026 &amp;middot; 1 min read</span>
+                </div>
+              </a>
+            </article>
+            <p class="project-card-meta">A quick tour of the built-in blog module and what you can do with it.</p>
+          </div>
+          <div class="col-12 col-md-6" data-reveal>
+            <article class="media-card">
+              <a class="media-card__link" href="blog/scaling-laravel-queues-to-1m-jobs-a-day.html">
+                <div class="media-card__media">
+                  <img src="assets/images/featured-queues.svg" alt="Horizon tuning, batching, rate limits and the dead-letter patterns that saved our SLA." width="1200" height="750" loading="lazy" decoding="async">
+                </div>
+                <div class="media-card__body">
+                  <h3 class="media-card__name">Scaling Laravel Queues to 1M Jobs a Day</h3>
+                  <span class="tag">Laravel &amp;middot; Aug 15, 2026 &amp;middot; 1 min read</span>
+                </div>
+              </a>
+            </article>
+            <p class="project-card-meta">Horizon tuning, batching, rate limits and the dead-letter patterns that saved our SLA.</p>
+          </div>
+          <div class="col-12 col-md-6" data-reveal>
+            <article class="media-card">
+              <a class="media-card__link" href="blog/rag-in-production-embeddings-that-dont-lie.html">
+                <div class="media-card__media">
+                  <img src="assets/images/blog-rag.svg" alt="Chunking strategies, hybrid search and eval loops for LLM features users can trust." width="1200" height="750" loading="lazy" decoding="async">
+                </div>
+                <div class="media-card__body">
+                  <h3 class="media-card__name">RAG in Production: Embeddings That Don&#39;t Lie</h3>
+                  <span class="tag">AI &amp;middot; Jul 31, 2026 &amp;middot; 1 min read</span>
+                </div>
+              </a>
+            </article>
+            <p class="project-card-meta">Chunking strategies, hybrid search and eval loops for LLM features users can trust.</p>
+          </div>
+          <div class="col-12 col-md-6" data-reveal>
+            <article class="media-card">
+              <a class="media-card__link" href="blog/anatomy-of-a-200ms-api-endpoint.html">
+                <div class="media-card__media">
+                  <img src="assets/images/blog-api.svg" alt="Query plans, cache stampedes and Octane — a trace-by-trace teardown of latency." width="1200" height="750" loading="lazy" decoding="async">
+                </div>
+                <div class="media-card__body">
+                  <h3 class="media-card__name">Anatomy of a 200ms API Endpoint</h3>
+                  <span class="tag">Architecture &amp;middot; Jul 16, 2026 &amp;middot; 1 min read</span>
+                </div>
+              </a>
+            </article>
+            <p class="project-card-meta">Query plans, cache stampedes and Octane — a trace-by-trace teardown of latency.</p>
+          </div>
+          <div class="col-12 col-md-6" data-reveal>
+            <article class="media-card">
+              <a class="media-card__link" href="blog/zero-downtime-deploys-with-octane-ecs.html">
+                <div class="media-card__media">
+                  <img src="assets/images/blog-deploy.svg" alt="Blue/green flow, expand-contract migrations, warm caches." width="1200" height="750" loading="lazy" decoding="async">
+                </div>
+                <div class="media-card__body">
+                  <h3 class="media-card__name">Zero-Downtime Deploys with Octane + ECS</h3>
+                  <span class="tag">DevOps &amp;middot; Jul 1, 2026 &amp;middot; 1 min read</span>
+                </div>
+              </a>
+            </article>
+            <p class="project-card-meta">Blue/green flow, expand-contract migrations, warm caches.</p>
+          </div>
+          <div class="col-12 col-md-6" data-reveal>
+            <article class="media-card">
+              <a class="media-card__link" href="blog/a-testing-strategy-teams-actually-keep.html">
+                <div class="media-card__media">
+                  <img src="assets/images/blog-testing.svg" alt="Feature-first pyramids, contract tests and CI budgets." width="1200" height="750" loading="lazy" decoding="async">
+                </div>
+                <div class="media-card__body">
+                  <h3 class="media-card__name">A Testing Strategy Teams Actually Keep</h3>
+                  <span class="tag">Architecture &amp;middot; Jun 11, 2026 &amp;middot; 1 min read</span>
+                </div>
+              </a>
+            </article>
+            <p class="project-card-meta">Feature-first pyramids, contract tests and CI budgets.</p>
+          </div>
+          <div class="col-12 col-md-6" data-reveal>
+            <article class="media-card">
+              <a class="media-card__link" href="blog/six-years-of-freelance-engineering-systematized.html">
+                <div class="media-card__media">
+                  <img src="assets/images/blog-freelance.svg" alt="Contracts, discovery sprints and saying no profitably." width="1200" height="750" loading="lazy" decoding="async">
+                </div>
+                <div class="media-card__body">
+                  <h3 class="media-card__name">Six Years of Freelance Engineering, Systematized</h3>
+                  <span class="tag">Career &amp;middot; May 27, 2026 &amp;middot; 1 min read</span>
+                </div>
+              </a>
+            </article>
+            <p class="project-card-meta">Contracts, discovery sprints and saying no profitably.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand__initials" aria-hidden="true">MA</span>
+            <span>Mohammed Akbar Hossen</span>
+          </a>
+          <p class="footer__blurb">Laravel &amp; Backend Developer. Feni, Bangladesh. Available for freelance — Q3 2026.</p>
+        </div>
+
+        <nav aria-labelledby="footer-pages">
+          <h2 class="footer__heading" id="footer-pages">Pages</h2>
+          <ul class="footer__list">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-labelledby="footer-projects">
+          <h2 class="footer__heading" id="footer-projects">Projects</h2>
+          <ul class="footer__list">
+            <li><a href="project/sellino-ecommerce-platform.html">Sellino</a></li>
+            <li><a href="project/baillows-nextjs-storefront.html">Baillows</a></li>
+            <li><a href="project/jobnect-job-listing-platform.html">JobNect</a></li>
+            <li><a href="project/feni-doctor-info.html">Feni Doctor Info</a></li>
+            <li><a href="projects.html">All projects</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__heading" id="footer-elsewhere">Elsewhere</h2>
+          <ul class="footer__list">
+            <li><a href="https://github.com/Akbar758742" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/akbar" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://facebook.com/akbar" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://x.com/akbar" target="_blank" rel="noopener">X</a></li>
+            <li><a href="mailto:mdakbar758742@gmail.com">mdakbar758742@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2026</span> Mohammed Akbar Hossen. Static site, no trackers.</p>
+        <p><a class="text-link" href="contact.html">Get in touch</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/hero.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

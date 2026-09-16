@@ -1,0 +1,159 @@
+/* ==========================================================================
+   responsive.css - global responsive overrides and viewport guards
+   Component-level breakpoints live with their component (components.css,
+   sections.css). This file holds the page-wide adjustments: gutters, section
+   rhythm, anchor offsets, overflow guards, and the reduced-motion safety net.
+   ========================================================================== */
+
+/* Anchor targets must clear the sticky header. */
+section[id],
+article[id],
+li[id],
+div[id] {
+  scroll-margin-top: calc(var(--header-h) + var(--space-6));
+}
+
+/* .visually-hidden comes from Bootstrap's helpers (used by the statement band's
+   accessible name and the in-document icon sprite), so it is not redefined here. */
+
+/* --------------------------------------------------------------------------
+   Large desktop (>= 1400px)
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 1400px) {
+  .hero__copy,
+  .hero__install {
+    max-width: 50rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet (<= 991.98px)
+   Header collapses to the panel, the hero field becomes the marquee, tier and
+   footer columns reflow.
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+  .contributors__head {
+    align-items: flex-start;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile (<= 767.98px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 767.98px) {
+  :root {
+    --gutter: 1.125rem;
+    --section-y: clamp(3.25rem, 12vw, 4.5rem);
+    --section-y-tight: clamp(2.5rem, 9vw, 3.5rem);
+  }
+
+  .container {
+    --bs-gutter-x: 2.25rem;
+  }
+
+  /* A row's negative margin is half its gutter, which the container has to be
+     able to absorb. The container gutter shrinks to 2.25rem on phones, so any
+     row gutter wider than that pushed the page 2px wide. Every multi-column
+     layout is single-column at this width, so the wider row gutters buy
+     nothing here. */
+  .row.row,
+  .grid-wide {
+    --bs-gutter-x: 1.5rem;
+  }
+
+  .install-panel {
+    padding: var(--space-4);
+  }
+
+  .media-card__body {
+    flex-wrap: wrap;
+  }
+
+  .avatar-wall {
+    gap: var(--space-2);
+  }
+
+  .support__panel {
+    padding: var(--space-5);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small phone (<= 575.98px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 575.98px) {
+  /* Long install commands wrap under their copy control instead of squeezing
+     the button into an unreadable column. */
+  .code-block {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+    padding: var(--space-4);
+  }
+
+  .code-block .copy-btn {
+    align-self: flex-start;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .nav__actions .btn {
+    width: 100%;
+  }
+
+  .agent-index {
+    gap: var(--space-4) var(--space-3);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Very small (<= 400px): 320px, 375px, 390px class devices
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 400px) {
+  .avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .rule__id,
+  .agent__num {
+    letter-spacing: 0.02em;
+  }
+
+  .hero__title {
+    max-width: none;
+  }
+
+  .hero__flow figure {
+    width: 11rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Reduced motion safety net
+   Every component declares its own reduced-motion state; this block makes the
+   whole page static even if a future animation forgets to.
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

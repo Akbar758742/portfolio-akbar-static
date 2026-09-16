@@ -1,0 +1,844 @@
+/* ==========================================================================
+   components.css - reusable components
+   Buttons, tags, code blocks, tabs, header chrome, cards used more than once.
+   Mobile-first: base rules are the small-screen rules, min-width blocks add up.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Icons
+   A six-glyph inline-SVG set (arrow, external, copy, check, chevron, menu/close)
+   drawn once in index.html. One family, one stroke weight, no icon dependency.
+   -------------------------------------------------------------------------- */
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.icon--sm {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.icon--xs {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   Buttons
+   Four variants, one height, one radius. Every label passes AA against its
+   own fill (DESIGN.md section 6).
+   -------------------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: var(--btn-h);
+  padding: 0 var(--space-5);
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background-color: transparent;
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body-sm);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color var(--dur) ease, border-color var(--dur) ease,
+    color var(--dur) ease, transform var(--dur-fast) var(--ease);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: scale(0.985);
+}
+
+.btn--sm {
+  min-height: 2.25rem;
+  padding: 0 var(--space-4);
+  font-size: 0.875rem;
+}
+
+/* Primary: measured off the live CTAs, which are a near-black pill with white
+   type, not an orange fill. --ink-fill / --on-ink is 19.8:1. */
+.btn-primary {
+  border-color: var(--ink-fill);
+  background-color: var(--ink-fill);
+  color: var(--on-ink);
+}
+
+.btn-primary:hover {
+  border-color: #2b0a00;
+  background-color: #2b0a00;
+  color: var(--on-ink);
+}
+
+/* Secondary: measured as a white fill on the light ground, not a transparent
+   outline. The hairline keeps it legible where it lands on a white card. */
+.btn-outline {
+  border-color: var(--line);
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+.btn-outline:hover {
+  border-color: var(--line-strong);
+  background-color: var(--bg-deep);
+  color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+
+  .btn:hover,
+  .btn:active {
+    transform: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tag / chip
+   The only pill shape in the system.
+   -------------------------------------------------------------------------- */
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.1875rem 0.5rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-pill);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  line-height: 1.35;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tag--accent {
+  border-color: var(--accent-line);
+  background-color: var(--accent-wash);
+  color: var(--accent-text);
+}
+
+/* --------------------------------------------------------------------------
+   Code block + copy control
+   -------------------------------------------------------------------------- */
+
+/* The command block is the page's one dark element. That is measured, not a
+   style choice: the live install block samples #1a1a1a. */
+.code-block {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+  border: 1px solid var(--code-bg);
+  border-radius: var(--radius);
+  background-color: var(--code-bg);
+}
+
+.code-block__cmd {
+  flex: 1 1 auto;
+  min-width: 0;
+  color: var(--code-text);
+  font-family: var(--font-mono);
+  font-size: var(--fs-code);
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.code-block__prompt {
+  color: var(--accent);
+  user-select: none;
+}
+
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex: none;
+  min-height: 2rem;
+  padding: 0 var(--space-3);
+  border: 1px solid rgb(255 255 255 / 22%);
+  border-radius: var(--radius-sm);
+  background-color: rgb(255 255 255 / 6%);
+  color: var(--code-text);
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--tracking-label);
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color var(--dur) ease, border-color var(--dur) ease,
+    background-color var(--dur) ease, transform var(--dur-fast) var(--ease);
+}
+
+.copy-btn:hover {
+  border-color: rgb(255 255 255 / 42%);
+  background-color: rgb(255 255 255 / 12%);
+}
+
+.copy-btn:active {
+  transform: scale(0.96);
+}
+
+.copy-btn.is-copied {
+  border-color: var(--accent);
+  background-color: rgb(255 107 0 / 18%);
+  color: #ffd0ab;
+}
+
+.copy-btn__icon--done,
+.copy-btn.is-copied .copy-btn__icon--copy {
+  display: none;
+}
+
+.copy-btn.is-copied .copy-btn__icon--done {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .copy-btn {
+    transition: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tabs (install variants)
+   -------------------------------------------------------------------------- */
+
+.tablist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background-color: var(--surface-2);
+}
+
+.tab {
+  min-height: 1.875rem;
+  padding: 0 var(--space-3);
+  border: 0;
+  border-radius: var(--radius-sm);
+  background-color: transparent;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--tracking-label);
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color var(--dur) ease, background-color var(--dur) ease;
+}
+
+.tab:hover {
+  color: var(--text);
+}
+
+/* The selected tab is marked by weight and an accent rule as well as colour, so
+   the state is never carried by colour alone. */
+.tab[aria-selected="true"] {
+  position: relative;
+  background-color: var(--surface);
+  color: var(--text);
+  font-weight: 500;
+}
+
+.tab[aria-selected="true"]::after {
+  content: "";
+  position: absolute;
+  left: var(--space-3);
+  right: var(--space-3);
+  bottom: 2px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--accent);
+}
+
+.tabpanel {
+  margin-top: var(--space-5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tab {
+    transition: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Install panel
+   A real command block, not a fake terminal window: no traffic lights, no
+   invented chrome, no simulated output.
+   -------------------------------------------------------------------------- */
+
+.install-panel {
+  padding: var(--space-5);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background-color: var(--surface);
+}
+
+.install-panel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.install-panel__title {
+  font-size: var(--fs-body-sm);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.install-panel__note {
+  margin-top: var(--space-4);
+  color: var(--faint);
+  font-size: var(--fs-small);
+  text-wrap: pretty;
+}
+
+.install-panel__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--line);
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+}
+
+/* --------------------------------------------------------------------------
+   Announcement bar
+   -------------------------------------------------------------------------- */
+
+.announce {
+  border-bottom: 1px solid var(--line);
+  background-color: var(--surface);
+}
+
+.announce__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  min-height: 2.5rem;
+  padding-block: var(--space-2);
+  color: var(--muted);
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+.announce__link:hover {
+  color: var(--text);
+}
+
+.announce__chip {
+  border-color: var(--accent-line);
+  background-color: var(--accent-wash);
+  color: var(--accent-text);
+}
+
+.announce__arrow {
+  transition: transform var(--dur) var(--ease);
+}
+
+.announce__link:hover .announce__arrow {
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announce__arrow,
+  .announce__link:hover .announce__arrow {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Site header
+   -------------------------------------------------------------------------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  border-bottom: 1px solid transparent;
+  background-color: rgb(245 244 242 / 82%);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  transition: border-color var(--dur) ease, background-color var(--dur) ease;
+}
+
+.site-header.is-stuck {
+  border-bottom-color: var(--line);
+  background-color: rgb(245 244 242 / 96%);
+}
+
+@supports not (backdrop-filter: blur(2px)) {
+  .site-header {
+    background-color: var(--bg);
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  min-height: var(--header-h);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text);
+  font-size: var(--fs-body-sm);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.brand__mark {
+  width: 1.125rem;
+  height: 1.125rem;
+  stroke: none;
+  fill: none;
+}
+
+.brand__mark-core {
+  fill: var(--accent);
+}
+
+/* Mobile: the primary nav is a panel hanging off the header. Anchored to the
+   sticky header (not the viewport) so it sits directly under it at any scroll
+   position, including while the announcement bar is still on screen. */
+.nav__panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: var(--z-header);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-height: calc(100vh - var(--header-h));
+  max-height: calc(100dvh - var(--header-h));
+  padding: var(--space-6) var(--gutter) var(--space-10);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background-color: var(--bg);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease),
+    visibility var(--dur) ease;
+}
+
+.nav__panel.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+body.nav-locked {
+  overflow: hidden;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-3) 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-align: left;
+  cursor: pointer;
+  transition: color var(--dur) ease;
+}
+
+.nav__link:hover,
+.nav__link[aria-current="true"] {
+  color: var(--text);
+}
+
+.nav__trigger .icon {
+  transition: transform var(--dur) var(--ease);
+}
+
+.nav__trigger[aria-expanded="true"] {
+  color: var(--text);
+}
+
+.nav__trigger[aria-expanded="true"] .icon {
+  transform: rotate(180deg);
+}
+
+.nav__menu {
+  position: relative;
+}
+
+/* Mobile dropdown: an inline disclosure under the trigger. */
+.nav__dropdown {
+  display: none;
+  gap: 2px;
+  margin-top: var(--space-2);
+  padding-left: var(--space-3);
+  border-left: 1px solid var(--line);
+}
+
+.nav__menu.is-open .nav__dropdown {
+  display: grid;
+}
+
+.nav__dropdown a {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+  font-size: var(--fs-body-sm);
+}
+
+.nav__dropdown a:hover {
+  background-color: var(--surface-2);
+  color: var(--text);
+}
+
+.nav__dropdown-index {
+  flex: none;
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+}
+
+.nav__dropdown-all {
+  color: var(--accent-text) !important;
+}
+
+.nav__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--line);
+}
+
+.nav__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--line-control);
+  border-radius: var(--radius-sm);
+  background-color: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color var(--dur) ease, background-color var(--dur) ease,
+    transform var(--dur-fast) var(--ease);
+}
+
+.nav__toggle:hover {
+  border-color: var(--accent-line);
+  background-color: var(--surface-2);
+}
+
+.nav__toggle:active {
+  transform: scale(0.96);
+}
+
+.nav__toggle .icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.nav__toggle-icon--close,
+.nav__toggle[aria-expanded="true"] .nav__toggle-icon--open {
+  display: none;
+}
+
+.nav__toggle[aria-expanded="true"] .nav__toggle-icon--close {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header,
+  .nav__panel,
+  .nav__trigger .icon,
+  .nav__toggle {
+    transition: none;
+  }
+
+  .nav__toggle:active {
+    transform: none;
+  }
+}
+
+/* Desktop nav: single line, never wraps. */
+@media (min-width: 992px) {
+  .nav__panel {
+    position: static;
+    inset: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-7);
+    padding: 0;
+    border-top: 0;
+    background: none;
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-6);
+  }
+
+  .nav__link {
+    width: auto;
+    padding: var(--space-2) 0;
+    font-size: var(--fs-body-sm);
+  }
+
+  .nav__actions {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  /* Desktop dropdown: always laid out, revealed by opacity + visibility so it
+     can transition and stays out of the tab order while closed. */
+  .nav__dropdown {
+    display: grid;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: -0.75rem;
+    min-width: 16rem;
+    margin-top: 0;
+    padding: var(--space-2);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background-color: var(--surface);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity var(--dur-fast) ease, transform var(--dur-fast) var(--ease),
+      visibility var(--dur-fast) ease;
+  }
+
+  .nav__menu.is-open .nav__dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Cards
+   Two card families only: the skill card and the media card. Everything else
+   on the page is grouped by hairline or space, not by a box.
+   -------------------------------------------------------------------------- */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: var(--space-5);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background-color: var(--surface);
+  transition: border-color var(--dur) ease, background-color var(--dur) ease;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: var(--space-6);
+  }
+}
+
+.skill-card:hover,
+.skill-card:focus-within {
+  border-color: var(--line-strong);
+  background-color: var(--surface-2);
+}
+
+.skill-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.skill-card__name {
+  font-family: var(--font-mono);
+  font-size: var(--fs-h3);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.skill-card__desc {
+  margin-top: var(--space-3);
+  max-width: var(--measure-card);
+  flex: 1 1 auto;
+  color: var(--muted);
+  font-size: var(--fs-body-sm);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.skill-card__install {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--line);
+}
+
+.skill-card__slug {
+  min-width: 0;
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+  transition: color var(--dur) ease;
+}
+
+.skill-card:hover .skill-card__slug,
+.skill-card:focus-within .skill-card__slug {
+  color: var(--muted);
+}
+
+.media-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background-color: var(--surface);
+}
+
+.media-card__media {
+  aspect-ratio: 16 / 10;
+  background-color: var(--surface-2);
+  overflow: hidden;
+}
+
+.media-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms var(--ease);
+}
+
+.media-card:hover .media-card__media img {
+  transform: scale(1.03);
+}
+
+.media-card__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-5);
+}
+
+.media-card__name {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .skill-card__slug,
+  .media-card__media img,
+  .media-card:hover .media-card__media img {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Note panel (release stability callout)
+   -------------------------------------------------------------------------- */
+
+.note-panel {
+  padding: var(--space-5);
+  border: 1px solid var(--accent-line);
+  border-radius: var(--radius);
+  background-color: var(--accent-wash);
+}
+
+.note-panel__title {
+  font-size: var(--fs-body-sm);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.note-panel p {
+  margin-top: var(--space-3);
+  max-width: var(--measure);
+  color: var(--muted);
+  font-size: var(--fs-body-sm);
+  text-wrap: pretty;
+}
+
+@media (min-width: 768px) {
+  .note-panel {
+    padding: var(--space-6);
+  }
+}
