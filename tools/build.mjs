@@ -617,7 +617,64 @@ ${sectionHead("Kind <em>words</em>.", COPY.testimonialsSub)}
 
     <!-- Works with every stack (compat stage) -->
     <section class="compat-stage" id="stack" aria-labelledby="compat-title">
-      <div class="compat-stage__bg" aria-hidden="true"></div>
+      <div class="compat-stage__bg" aria-hidden="true">
+        <svg class="compat-stage__schematic" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <!-- registration crosses + title -->
+          <g stroke="#b4aca2" stroke-width="1.5" stroke-linecap="round">
+            <path d="M72 64v16M64 72h16"></path>
+            <path d="M1368 64v16M1360 72h16"></path>
+            <path d="M72 680v16M64 688h16"></path>
+            <path d="M1368 680v16M1360 688h16"></path>
+          </g>
+          <text class="schematic__label" x="88" y="76">SCHEMATIC 07 — ONE CORE, MANY SURFACES</text>
+
+          <!-- two quiet bus rails in the clear margins; the floating cards
+               between them are the surfaces they serve -->
+          <g fill="none" stroke="#b4aca2" stroke-width="1.5" stroke-linecap="round">
+            <path d="M110 60 H1330"></path>
+            <path d="M270 528 H1330"></path>
+          </g>
+          <g fill="#f5f4f2" stroke="#b4aca2" stroke-width="1.5">
+            <circle cx="1330" cy="60" r="5"></circle>
+            <circle cx="1330" cy="528" r="5"></circle>
+          </g>
+
+          <!-- core chip, parked in the copy column's clear bottom-left zone -->
+          <g>
+            <g transform="rotate(-8 200 570)">
+              <rect x="146" y="516" width="108" height="108" rx="14" fill="#ffffff" stroke="#b4aca2" stroke-width="1.5"></rect>
+              <rect x="175" y="545" width="50" height="50" rx="8" fill="none" stroke="#ff6b00" stroke-width="1.5"></rect>
+              <g stroke="#b4aca2" stroke-width="1.5">
+                <path d="M164 516v-10M184 516v-10M204 516v-10M224 516v-10M244 516v-10"></path>
+                <path d="M164 624v10M184 624v10M204 624v10M224 624v10M244 624v10"></path>
+              </g>
+            </g>
+            <circle class="schematic__pulse" cx="200" cy="570" r="26" fill="none" stroke="#ff6b00" stroke-width="1.5"></circle>
+            <circle cx="200" cy="570" r="4.5" fill="#ff6b00"></circle>
+            <text class="schematic__label" x="200" y="666" text-anchor="middle">CORE-01 · LARAVEL</text>
+          </g>
+
+          <!-- packets riding the bus rails (SMIL, desynced by negative begin) -->
+          <g class="schematic__packets" fill="#ff6b00">
+            <circle r="3.5">
+              <animateMotion dur="12s" begin="0s" repeatCount="indefinite" path="M110 60 H1330"></animateMotion>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+            </circle>
+            <circle r="3.5">
+              <animateMotion dur="16s" begin="-9s" repeatCount="indefinite" path="M110 60 H1330"></animateMotion>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="16s" begin="-9s" repeatCount="indefinite"></animate>
+            </circle>
+            <circle r="3.5">
+              <animateMotion dur="13s" begin="-4s" repeatCount="indefinite" path="M270 528 H1330"></animateMotion>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="13s" begin="-4s" repeatCount="indefinite"></animate>
+            </circle>
+            <circle r="3.5">
+              <animateMotion dur="17s" begin="-12s" repeatCount="indefinite" path="M270 528 H1330"></animateMotion>
+              <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="17s" begin="-12s" repeatCount="indefinite"></animate>
+            </circle>
+          </g>
+        </svg>
+      </div>
       <div class="container">
         <div class="compat-stage__hero" data-reveal>
           <div class="compat-stage__copy">
@@ -667,12 +724,38 @@ ${sectionHead("Kind <em>words</em>.", COPY.testimonialsSub)}
       <div class="band-poster__glow band-poster__glow--left" aria-hidden="true"></div>
       <div class="band-poster__glow band-poster__glow--right" aria-hidden="true"></div>
 
+      <!-- faint schematic bus behind the sentence, same language as the
+           compat stage above -->
+      <svg class="band-poster__bus" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <path d="M0 200 H1440" fill="none" stroke="#b4aca2" stroke-width="1.5"></path>
+        <g fill="#f5f4f2" stroke="#b4aca2" stroke-width="1.5">
+          <circle cx="120" cy="200" r="5"></circle>
+          <circle cx="1320" cy="200" r="5"></circle>
+        </g>
+        <g class="schematic__packets" fill="#ff6b00">
+          <circle r="3.5">
+            <animateMotion dur="14s" begin="0s" repeatCount="indefinite" path="M0 200 H1440"></animateMotion>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="14s" begin="0s" repeatCount="indefinite"></animate>
+          </circle>
+          <circle r="3.5">
+            <animateMotion dur="19s" begin="-11s" repeatCount="indefinite" path="M0 200 H1440"></animateMotion>
+            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="19s" begin="-11s" repeatCount="indefinite"></animate>
+          </circle>
+        </g>
+      </svg>
+
       <div class="container">
         <div class="band-poster__copy" aria-hidden="true" data-reveal>
           <div class="band-poster__line">
             <span class="band-poster__word band-poster__word--rise">From</span>
             <span class="band-poster__pill band-poster__pill--land">
-              <img src="assets/images/case-ecommerce.svg" alt="" width="356" height="152" loading="lazy" decoding="async">
+              <!-- DB-01: storage cylinder, drawn in the schematic accent -->
+              <svg viewBox="0 0 112 48" focusable="false" aria-hidden="true">
+                <ellipse cx="56" cy="12" rx="34" ry="7" fill="none" stroke="#ff6b00" stroke-width="1.75"></ellipse>
+                <path d="M22 12 V36 C22 39.5 37 41 56 41 C75 41 90 39.5 90 36 V12" fill="none" stroke="#ff6b00" stroke-width="1.75"></path>
+                <path d="M22 24 C22 27.5 37 29 56 29 C75 29 90 27.5 90 24" fill="none" stroke="#ff6b00" stroke-width="1.75" opacity="0.45"></path>
+                <circle cx="56" cy="24" r="2.5" fill="#ff6b00"></circle>
+              </svg>
             </span>
           </div>
 
@@ -682,17 +765,26 @@ ${sectionHead("Kind <em>words</em>.", COPY.testimonialsSub)}
           </div>
 
           <div class="band-poster__line">
-            <span class="band-poster__spark" aria-hidden="true"></span>
-            <span class="band-poster__word band-poster__word--blue band-poster__word--wide">to</span>
+            <span class="band-poster__node" aria-hidden="true"></span>
+            <span class="band-poster__word band-poster__word--ink band-poster__word--wide">to</span>
             <span class="band-poster__pill band-poster__pill--code">
-              <img src="assets/images/project-ecommerce.svg" alt="" width="400" height="160" loading="lazy" decoding="async">
+              <!-- APP-01: dark terminal chip matching the install panel -->
+              <svg viewBox="0 0 120 48" focusable="false" aria-hidden="true">
+                <rect x="1.5" y="1.5" width="117" height="45" rx="8" fill="#1a1a1a" stroke="#3a3a3a" stroke-width="1"></rect>
+                <circle cx="11" cy="10" r="1.8" fill="#5f5850"></circle>
+                <circle cx="18" cy="10" r="1.8" fill="#5f5850"></circle>
+                <circle cx="25" cy="10" r="1.8" fill="#ff6b00"></circle>
+                <text x="14" y="31" fill="#f5f4f2" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="10" font-weight="500">php artisan serve</text>
+                <circle cx="14" cy="39" r="2" fill="#ff6b00"></circle>
+                <rect x="21" y="37.5" width="26" height="3" rx="1.5" fill="#3a3a3a"></rect>
+              </svg>
             </span>
           </div>
 
           <div class="band-poster__line band-poster__line--end">
             <span class="band-poster__word band-poster__word--rise">production</span>
-            <span class="band-poster__word band-poster__word--red band-poster__word--rise">frontend.</span>
-            <span class="band-poster__flame" aria-hidden="true"></span>
+            <span class="band-poster__word band-poster__word--ship band-poster__word--rise">frontend.</span>
+            <span class="band-poster__packet" aria-hidden="true"></span>
           </div>
         </div>
       </div>
@@ -1140,7 +1232,7 @@ const blogBody = `${pageHero(`Writing about the <em>craft</em>.`, IS_COMPANY ? "
           ${data.blog_posts
             .map(
               (post) => `<div class="col-12 col-md-6" data-reveal>
-            ${mediaCard(asset(post.featured_image), post.title, `${post.category?.name ?? "Notes"} &middot; ${fmtDate(post.published_at)} &middot; ${readMins(post)} min read`, `blog/${post.slug}.html`, post.excerpt)}
+            ${mediaCard(asset(post.featured_image ?? "assets/images/blog-api.svg"), post.title, `${post.category?.name ?? "Notes"} &middot; ${fmtDate(post.published_at)} &middot; ${readMins(post)} min read`, `blog/${post.slug}.html`, post.excerpt)}
             <p class="project-card-meta">${esc(post.excerpt)}</p>
           </div>`,
             )
@@ -1166,7 +1258,7 @@ function blogPostPage(post) {
     <section class="section section--tight">
       <div class="container">
         <figure class="media-card" data-reveal>
-          <div class="media-card__media"><img src="${root}${asset(post.featured_image)}" alt="${esc(post.title)}" width="1200" height="750" loading="lazy" decoding="async"></div>
+          <div class="media-card__media"><img src="${root}${asset(post.featured_image ?? "assets/images/blog-api.svg")}" alt="${esc(post.title)}" width="1200" height="750" loading="lazy" decoding="async"></div>
         </figure>
         <div class="prose" data-reveal>${post.content}</div>
         <p class="projects__invite"><a class="text-link" href="${root}blog.html">&larr; All posts</a></p>

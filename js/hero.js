@@ -1,5 +1,5 @@
 /* ==========================================================================
-   hero.js - 3D perspective carousel exactly like tasteskill.dev
+   hero.js - 3D perspective carousel
    7 images at 62% width, rounded 18px, depth -1000..+273px, scale 0.44..1.17
    perspective 3400px on stage, rotateX 3deg rotateY -4deg on field.
    Auto-rotates slowly, wraps, draggable (grab / grabbing).
@@ -51,7 +51,6 @@
     var lastTime = 0;
     var frame = 0;
     var visible = false;
-    var pausedByDrag = false;
 
     function measure() {
       if (stage.offsetWidth === 0) return false;
@@ -96,11 +95,17 @@
     }
 
     function tick(now) {
-      if (!visible || dragging) return;
+      // Loop stays alive while visible; dragging freezes advancement so the
+      // pointer keeps exact control. Never let the loop die silently here -
+      // an early return without a reschedule used to strand the carousel
+      // until the next click restarted it.
+      if (!visible) return;
       var elapsed = Math.min(now - lastTime, MAX_FRAME_MS) / 1000;
       lastTime = now;
-      progress = (progress + SPEED * elapsed) % POSITIONS.length;
-      render();
+      if (!dragging) {
+        progress = (progress + SPEED * elapsed) % POSITIONS.length;
+        render();
+      }
       frame = window.requestAnimationFrame(tick);
     }
 
@@ -108,6 +113,7 @@
       if (visible) return;
       visible = true;
       lastTime = window.performance && window.performance.now ? window.performance.now() : Date.now();
+      window.cancelAnimationFrame(frame); // never run two parallel loops
       frame = window.requestAnimationFrame(tick);
     }
 
@@ -116,12 +122,11 @@
       window.cancelAnimationFrame(frame);
     }
 
-    // drag: horizontal drag advances carousel progress
+    // drag: horizontal drag advances carousel progress. The loop keeps
+    // running throughout - tick() just skips advancement while dragging.
     function onPointerDown(e) {
       if (e.button !== 0 && e.pointerType === "mouse") return;
       dragging = true;
-      pausedByDrag = visible;
-      stop();
       dragStartX = e.clientX;
       dragStartProgress = progress;
       stage.classList.add("is-dragging");
@@ -142,7 +147,6 @@
       if (!dragging) return;
       dragging = false;
       stage.classList.remove("is-dragging");
-      if (pausedByDrag) start();
     }
 
     stage.addEventListener("pointerdown", onPointerDown);
@@ -175,11 +179,17 @@
         else stop();
       }, { threshold: 0 });
       observer.observe(stage);
+
+      // Belt and braces: if the observer never fires (prerendered tabs,
+      // embedding quirks), kick the drift shortly after first paint anyway.
+      window.setTimeout(function () {
+        if (!visible && !document.hidden && measure()) start();
+      }, 700);
     } else {
       start();
     }
   }
 
-  window.TasteSkill = window.TasteSkill || {};
-  window.TasteSkill.hero = { init: init };
+  window.Portfolio = window.Portfolio || {};
+  window.Portfolio.hero = { init: init };
 })();

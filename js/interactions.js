@@ -1,6 +1,6 @@
 /* ==========================================================================
    interactions.js - tabs, copy to clipboard, avatar fallback, footer year
-   Classic script. Exposes TasteSkill.interactions.init().
+   Classic script. Exposes Portfolio.interactions.init().
    ========================================================================== */
 
 (function () {
@@ -232,6 +232,6 @@
     initFooterYear();
   }
 
-  window.TasteSkill = window.TasteSkill || {};
-  window.TasteSkill.interactions = { init: init };
+  window.Portfolio = window.Portfolio || {};
+  window.Portfolio.interactions = { init: init };
 })();

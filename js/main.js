@@ -11,7 +11,7 @@
   var MODULES = ["navigation", "animations", "hero", "interactions"];
 
   function init() {
-    var app = window.TasteSkill || {};
+    var app = window.Portfolio || {};
 
     MODULES.forEach(function (name) {
       var module = app[name];
@@ -21,8 +21,8 @@
     });
   }
 
-  window.TasteSkill = window.TasteSkill || {};
-  window.TasteSkill.init = init;
+  window.Portfolio = window.Portfolio || {};
+  window.Portfolio.init = init;
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);

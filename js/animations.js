@@ -2,7 +2,7 @@
    animations.js - scroll reveal
    One IntersectionObserver, one-shot, staggered inside grouped containers.
    Honours prefers-reduced-motion and degrades to "everything visible" when
-   the API is missing. Exposes TasteSkill.animations.init().
+   the API is missing. Exposes Portfolio.animations.init().
    ========================================================================== */
 
 (function () {
@@ -86,6 +86,6 @@
     });
   }
 
-  window.TasteSkill = window.TasteSkill || {};
-  window.TasteSkill.animations = { init: init };
+  window.Portfolio = window.Portfolio || {};
+  window.Portfolio.animations = { init: init };
 })();

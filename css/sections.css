@@ -33,7 +33,7 @@
   z-index: var(--z-copy);
 }
 
-/* Hero main: exactly like tasteskill.dev - grid 1fr + 1.1fr at desktop,
+/* Hero main: 3D stage layout - grid 1fr + 1.1fr at desktop,
    copy left centred on mobile, left-aligned at desktop. */
 .hero__main {
   display: grid;
@@ -124,7 +124,7 @@
 }
 
 /* --- tile field ---------------------------------------------------------
-   Exactly like tasteskill.dev: desktop is a 3D perspective carousel
+   Desktop is a 3D perspective carousel
    (perspective 3400px, 7 figures at 62% width, rounded 18px, depth -1000..+273)
    Mobile: hidden - replaced by horizontal marquee. */
 
@@ -178,7 +178,7 @@
 .hero__tile:nth-child(6) { --tx: -58%; --ty: 22%; --tr: 9deg; --tw: 11rem; }
 .hero__tile:nth-child(7) { --tx: 58%; --ty: -8%; --tr: -9deg; --tw: 13rem; }
 
-/* Desktop: exact tasteskill.dev 3D carousel - shifted right so it doesn't sit under left text */
+/* Desktop 3D carousel - shifted right so it doesn't sit under left text */
 @media (min-width: 992px) {
   .hero__stage {
     position: relative;
@@ -489,12 +489,83 @@
   overflow: hidden;
 }
 
+/* Original in-house backdrop: a routing schematic. A core chip sits in the
+   copy column's clear bottom-left zone and two quiet bus rails carry packets
+   through the outer margins — the floating cards are the surfaces. Paper base
+   lives in CSS; the artwork is inline SVG in the markup (no image asset) and
+   packets ride the rails via SMIL, so no JS is involved. */
 .compat-stage__bg {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgb(245 244 242 / 0%) 0%, rgb(245 244 242 / 62%) 70%, var(--bg) 100%),
-    url("https://www.tasteskill.dev/cleanstoneimg.webp") center / cover no-repeat;
+  background: linear-gradient(150deg, #faf9f7 0%, #f1efec 52%, #eae7e2 100%);
+}
+
+.compat-stage__schematic {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+/* Bottom fade keeps the hand-off to the statement band seamless. */
+.compat-stage__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(245 244 242 / 0%) 0%,
+    rgb(245 244 242 / 0%) 55%,
+    rgb(245 244 242 / 55%) 82%,
+    var(--bg) 100%
+  );
+}
+
+.schematic__label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  fill: rgb(31 26 22 / 42%);
+}
+
+.schematic__pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: compat-core-pulse 3s var(--ease) infinite;
+}
+
+@keyframes compat-core-pulse {
+  0%,
+  100% {
+    transform: scale(0.7);
+    opacity: 0.9;
+  }
+
+  70% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .schematic__packets {
+    display: none;
+  }
+
+  .schematic__pulse {
+    animation: none;
+  }
+}
+
+/* On small screens the copy is centered and the artwork would only fight it —
+   the stage keeps a quiet paper wash instead. */
+@media (max-width: 991.98px) {
+  .compat-stage__schematic {
+    display: none;
+  }
 }
 
 .compat-stage > .container {
@@ -798,6 +869,18 @@
   background-color: rgb(114 106 98 / 14%);
 }
 
+/* A faint data bus running the width of the band behind the sentence —
+   the same schematic language as the compat stage above, so the two
+   sections read as one system. Packets reuse .schematic__packets, which
+   the reduced-motion rules already hide. */
+.band-poster__bus {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
 .band-poster__copy {
   position: relative;
   z-index: var(--z-copy);
@@ -843,12 +926,12 @@
   padding-bottom: 0.05em;
 }
 
-.band-poster__word--blue {
-  color: #0a2540;
+.band-poster__word--ink {
+  color: var(--text);
 }
 
-.band-poster__word--red {
-  color: #c5302d;
+.band-poster__word--ship {
+  color: var(--accent);
 }
 
 .band-poster__pill {
@@ -875,44 +958,64 @@
   rotate: 6deg;
 }
 
-.band-poster__pill img {
+.band-poster__pill svg {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transform: scale(1.05);
 }
 
-.band-poster__spark,
-.band-poster__flame {
+/* Commit node: an orange station dot with a ring, from the schematic
+   language above. Replaces the template's star spark. */
+.band-poster__node {
+  position: relative;
   display: inline-block;
   flex: none;
+  width: clamp(1.5rem, 3.2vw, 2.5rem);
+  aspect-ratio: 1;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+}
+
+.band-poster__node::after {
+  content: "";
+  position: absolute;
+  inset: 30%;
+  border-radius: 50%;
   background-color: var(--accent);
 }
 
-.band-poster__spark {
-  width: clamp(2.125rem, 4.5vw, 4rem);
-  aspect-ratio: 1;
-  clip-path: polygon(50% 0, 61% 38%, 100% 50%, 61% 62%, 50% 100%, 39% 62%, 0 50%, 39% 38%);
-}
-
-.band-poster__flame {
+/* Deploy packet: a dot leaving a fading trail — the pipeline shipping.
+   Replaces the template's flame blob. */
+.band-poster__packet {
   position: relative;
-  width: clamp(1.75rem, 3.6vw, 3.25rem);
-  aspect-ratio: 0.72;
-  border-radius: 72% 28% 64% 36% / 72% 42% 58% 28%;
-  background-color: #c5302d;
-  rotate: 16deg;
+  display: inline-block;
+  flex: none;
+  width: clamp(2.5rem, 5.5vw, 4.5rem);
+  height: clamp(0.75rem, 1.6vw, 1.25rem);
 }
 
-.band-poster__flame::after {
+.band-poster__packet::before {
   content: "";
   position: absolute;
-  left: 28%;
-  bottom: 14%;
+  right: 0;
+  top: 50%;
   width: 38%;
-  aspect-ratio: 0.72;
-  border-radius: inherit;
-  background-color: #ff8a24;
+  aspect-ratio: 1;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.band-poster__packet::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 58%;
+  height: 3px;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--accent));
 }
 
 html.js .band-poster__copy {
@@ -948,16 +1051,16 @@ html.js .band-poster__copy .band-poster__pill--code {
   transform: scale(0.5) rotate(14deg);
 }
 
-html.js .band-poster__copy .band-poster__spark,
-html.js .band-poster__copy .band-poster__flame {
+html.js .band-poster__copy .band-poster__node,
+html.js .band-poster__copy .band-poster__packet {
   opacity: 0;
-  transform: scale(0) rotate(-90deg);
+  transform: scale(0.2);
 }
 
 html.js .band-poster__copy.is-revealed .band-poster__word,
 html.js .band-poster__copy.is-revealed .band-poster__pill,
-html.js .band-poster__copy.is-revealed .band-poster__spark,
-html.js .band-poster__copy.is-revealed .band-poster__flame {
+html.js .band-poster__copy.is-revealed .band-poster__node,
+html.js .band-poster__copy.is-revealed .band-poster__packet {
   opacity: 1;
   filter: none;
   transform: none;
@@ -977,11 +1080,11 @@ html.js .band-poster__copy.is-revealed .band-poster__line:nth-child(2) .band-pos
   transition-delay: 220ms;
 }
 
-html.js .band-poster__copy.is-revealed .band-poster__spark {
+html.js .band-poster__copy.is-revealed .band-poster__node {
   transition-delay: 310ms;
 }
 
-html.js .band-poster__copy.is-revealed .band-poster__word--blue {
+html.js .band-poster__copy.is-revealed .band-poster__word--ink {
   transition-delay: 360ms;
 }
 
@@ -989,11 +1092,11 @@ html.js .band-poster__copy.is-revealed .band-poster__pill--code {
   transition-delay: 430ms;
 }
 
-html.js .band-poster__copy.is-revealed .band-poster__word--red {
+html.js .band-poster__copy.is-revealed .band-poster__word--ship {
   transition-delay: 540ms;
 }
 
-html.js .band-poster__copy.is-revealed .band-poster__flame {
+html.js .band-poster__copy.is-revealed .band-poster__packet {
   transition-delay: 620ms;
 }
 
@@ -1006,12 +1109,12 @@ html.js .band-poster__copy.is-revealed .band-poster__flame {
     animation-delay: -2.4s;
   }
 
-  .band-poster__copy.is-revealed .band-poster__spark {
-    animation: band-poster-twinkle 3.2s var(--ease) infinite 1s;
+  .band-poster__copy.is-revealed .band-poster__node {
+    animation: band-poster-node-ping 3.2s var(--ease) infinite 1s;
   }
 
-  .band-poster__copy.is-revealed .band-poster__flame {
-    animation: band-poster-flame 2.8s var(--ease) infinite 1.1s;
+  .band-poster__copy.is-revealed .band-poster__packet {
+    animation: band-poster-packet-run 2.8s var(--ease) infinite 1.1s;
   }
 }
 
@@ -1026,27 +1129,27 @@ html.js .band-poster__copy.is-revealed .band-poster__flame {
   }
 }
 
-@keyframes band-poster-twinkle {
+@keyframes band-poster-node-ping {
   0%,
   100% {
     scale: 1;
-    rotate: 0deg;
+    opacity: 1;
   }
 
   50% {
-    scale: 1.12;
-    rotate: 10deg;
+    scale: 1.15;
+    opacity: 0.7;
   }
 }
 
-@keyframes band-poster-flame {
+@keyframes band-poster-packet-run {
   0%,
   100% {
-    scale: 1;
+    translate: 0 0;
   }
 
-  45% {
-    scale: 0.88 1.08;
+  50% {
+    translate: 10px 0;
   }
 }
 
@@ -1075,20 +1178,25 @@ html.js .band-poster__copy.is-revealed .band-poster__flame {
     height: clamp(2rem, 8.5vw, 2.55rem);
   }
 
-  .band-poster__spark {
-    width: clamp(1.35rem, 7vw, 1.9rem);
+  .band-poster__node {
+    width: clamp(1.1rem, 5vw, 1.5rem);
   }
 
-  .band-poster__flame {
-    width: clamp(1.2rem, 6vw, 1.7rem);
+  .band-poster__packet {
+    width: clamp(1.9rem, 9vw, 2.6rem);
+    height: clamp(0.6rem, 3vw, 0.9rem);
+  }
+
+  .band-poster__bus {
+    display: none;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html.js .band-poster__copy .band-poster__word,
   html.js .band-poster__copy .band-poster__pill,
-  html.js .band-poster__copy .band-poster__spark,
-  html.js .band-poster__copy .band-poster__flame {
+  html.js .band-poster__copy .band-poster__node,
+  html.js .band-poster__copy .band-poster__packet {
     opacity: 1;
     filter: none;
     transform: none;

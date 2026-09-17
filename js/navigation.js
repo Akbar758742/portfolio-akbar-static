@@ -1,7 +1,7 @@
 /* ==========================================================================
    navigation.js - header state, mobile panel, nav dropdown, active section
    Classic script (no modules) so the page works when opened from the
-   filesystem without a server. Exposes TasteSkill.navigation.init().
+   filesystem without a server. Exposes Portfolio.navigation.init().
    ========================================================================== */
 
 (function () {
@@ -226,6 +226,6 @@
     initSectionSpy();
   }
 
-  window.TasteSkill = window.TasteSkill || {};
-  window.TasteSkill.navigation = { init: init };
+  window.Portfolio = window.Portfolio || {};
+  window.Portfolio.navigation = { init: init };
 })();
