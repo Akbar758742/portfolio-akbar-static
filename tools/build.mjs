@@ -1232,7 +1232,7 @@ const blogBody = `${pageHero(`Writing about the <em>craft</em>.`, IS_COMPANY ? "
           ${data.blog_posts
             .map(
               (post) => `<div class="col-12 col-md-6" data-reveal>
-            ${mediaCard(asset(post.featured_image ?? "assets/images/blog-api.svg"), post.title, `${post.category?.name ?? "Notes"} &middot; ${fmtDate(post.published_at)} &middot; ${readMins(post)} min read`, `blog/${post.slug}.html`, post.excerpt)}
+            ${mediaCard(asset(post.featured_image ?? "assets/images/blog-api.svg"), post.title, `${post.category?.name ?? "Notes"} · ${fmtDate(post.published_at)} · ${readMins(post)} min read`, `blog/${post.slug}.html`, post.excerpt)}
             <p class="project-card-meta">${esc(post.excerpt)}</p>
           </div>`,
             )
@@ -1251,7 +1251,7 @@ function blogPostPage(post) {
     title: `${post.title} | ${p.name}`,
     description: post.excerpt,
     body: `${pageHero(esc(post.title), "", `
-          <div class="page-hero__meta" data-reveal>              ${chip(`${post.category?.name ?? "Notes"} &middot; ${fmtDate(post.published_at)} &middot; ${readMins(post)} min read`)}
+          <div class="page-hero__meta" data-reveal>              ${chip(`${post.category?.name ?? "Notes"} · ${fmtDate(post.published_at)} · ${readMins(post)} min read`)}
             ${tagList(post.tags)}
           </div>`)}
 

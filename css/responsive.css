@@ -13,6 +13,28 @@ div[id] {
   scroll-margin-top: calc(var(--header-h) + var(--space-6));
 }
 
+/* Page-wide horizontal guard: no element may force the layout viewport wider
+   than the device (e.g. a nowrap pill with a long meta string). `clip` avoids
+   creating a scroll container — with a `hidden` fallback — so sticky
+   positioning keeps working. Contained scrollers (.prose pre, .hero__flow)
+   are unaffected. */
+html {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+/* Page-hero meta rows (category · date · read time pills) wrap instead of
+   forcing their container wider than the viewport. */
+.page-hero__meta {
+  min-width: 0;
+}
+
+.page-hero__meta .tag {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 /* .visually-hidden comes from Bootstrap's helpers (used by the statement band's
    accessible name and the in-document icon sprite), so it is not redefined here. */
 
@@ -99,6 +121,21 @@ div[id] {
     align-self: flex-start;
   }
 
+  /* Announcement bar: chip + sentence + arrow never fit one 360px row, and a
+     centred flex row overflows both sides. The sentence takes its own centred
+     row instead of being clipped. */
+  .announce__link {
+    flex-wrap: wrap;
+    row-gap: var(--space-1);
+    column-gap: var(--space-2);
+  }
+
+  .announce__link > span:nth-child(2) {
+    flex: 1 1 100%;
+    min-width: 0;
+    text-align: center;
+  }
+
   .hero__actions .btn {
     width: 100%;
   }
@@ -125,6 +162,14 @@ div[id] {
   .avatar {
     width: 2.5rem;
     height: 2.5rem;
+  }
+
+  /* The announcement chip is one nowrap pill (~294px). On 320–360px screens
+     even the chip alone can exceed the content box, so it may wrap. */
+  .announce__chip {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
   }
 
   .rule__id,

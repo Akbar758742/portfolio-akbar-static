@@ -891,6 +891,14 @@
   text-align: center;
 }
 
+/* Screen-reader heading carries the whole sentence. Bootstrap pins
+   visually-hidden text to one nowrap line, and as an absolutely-positioned
+   descendant it inflates the section's scrollable overflow on narrow
+   screens — so it may wrap here. It has no visual rendering to disturb. */
+.band-poster > .visually-hidden {
+  white-space: normal !important;
+}
+
 .band-poster__line {
   display: flex;
   flex-wrap: wrap;

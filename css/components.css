@@ -796,10 +796,27 @@ body.nav-locked {
   padding: var(--space-5) var(--space-5);
 }
 
+.media-card__body > * {
+  min-width: 0;
+}
+
 .media-card__name {
+  flex: 1 1 auto;
   font-size: var(--fs-h3);
   font-weight: 600;
   letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+
+/* Card tags carry free-form meta (category · date · read time, tagline
+   fragments). They must wrap inside the card instead of forcing it wider
+   than the viewport and getting clipped by the card's overflow. */
+.media-card__body .tag {
+  flex: none;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: left;
 }
 
 @media (prefers-reduced-motion: reduce) {
