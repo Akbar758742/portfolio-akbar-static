@@ -533,15 +533,12 @@ const pageHero = (title, lede, extra = "") => `    <section class="page-hero">
 /* Pages                                                               */
 /* ------------------------------------------------------------------ */
 
-const tileImages = [
-  "assets/images/project-ecommerce.svg",
-  "assets/images/project-brightlms.svg",
-  "assets/images/project-shiproute.svg",
-  "assets/images/project-billstack.svg",
-  "assets/images/project-medicore.svg",
-  "assets/images/project-stockpilot.svg",
-  "assets/images/project-threat.svg",
-];
+const heroProjects = data.projects.filter((project) => project.badge_label === "Live" && project.image);
+const heroImages = (heroProjects.length ? heroProjects : data.projects)
+  .filter((project) => project.image)
+  .map((project) => asset(project.image));
+// Keep the seven positions used by the existing desktop carousel.
+const tileImages = Array.from({ length: 7 }, (_, index) => heroImages[index % heroImages.length]);
 
 /* --- index.html ----------------------------------------------------- */
 

@@ -3,7 +3,8 @@
     "generated_at": "2026-09-13T18:30:46+00:00",
     "site_mode": "personal",
     "source": "portfolio-akbar (Laravel) — seeded content snapshot",
-    "variant_note": "Project/service strings are baked into the database at SEED time by Site::isCompany(). To switch variants, re-run `php artisan db:seed` with SITE_MODE=personal or SITE_MODE=company set, then export again."
+    "variant_note": "Project/service strings are baked into the database at SEED time by Site::isCompany(). To switch variants, re-run `php artisan db:seed` with SITE_MODE=personal or SITE_MODE=company set, then export again.",
+    "projects_updated_at": "2026-10-06"
   },
   "site_identity": {
     "name": "akbar.dev",
@@ -1243,6 +1244,318 @@
   ],
   "projects": [
     {
+      "id": 9,
+      "title": "BillOS — Billing & Invoice Management",
+      "slug": "billos",
+      "tagline": "Invoices, quotes, payments, and automated reminders.",
+      "description": "A billing platform for managing clients, invoices, quotes, payments, credit notes, instalments, and reminder workflows.",
+      "badge_label": "Live",
+      "badge_tone": "success",
+      "category": "saas",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/billos-live-20261006.jpg",
+      "gallery": null,
+      "tech_stack": [
+        "Laravel",
+        "Next.js",
+        "TypeScript",
+        "MySQL"
+      ],
+      "badges": [
+        {
+          "tone": "success",
+          "label": "Live website"
+        }
+      ],
+      "demo_url": "https://billos.xevrilon.me",
+      "github_url": "https://github.com/Akbar758742/BillOs",
+      "client": null,
+      "role": "Full-stack developer",
+      "timeline": null,
+      "team": null,
+      "status_label": "Live",
+      "status_tone": "success",
+      "facts": {
+        "overview": "A billing platform for managing clients, invoices, quotes, payments, credit notes, instalments, and reminder workflows."
+      },
+      "modules": [],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": "BillOS — Billing & Invoice Management",
+      "seo_description": "A billing platform for managing clients, invoices, quotes, payments, credit notes, instalments, and reminder workflows.",
+      "sort_order": 0,
+      "created_at": "2026-10-06T10:00:01.000000Z",
+      "updated_at": "2026-10-06T10:00:01.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 10,
+      "title": "Cargotrix — Delivery Management",
+      "slug": "cargotrix",
+      "tagline": "Parcel tracking, scheduled pickups, and cash-on-delivery.",
+      "description": "A delivery platform with merchant and rider workflows, shipment tracking, scheduled pickups, and cash-on-delivery management.",
+      "badge_label": "Live",
+      "badge_tone": "success",
+      "category": "saas",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/cargotrix-live-20261006.jpg",
+      "gallery": null,
+      "tech_stack": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "JavaScript"
+      ],
+      "badges": [
+        {
+          "tone": "success",
+          "label": "Live website"
+        }
+      ],
+      "demo_url": "https://cargotrix.xevrilon.me",
+      "github_url": "https://github.com/Akbar758742/Cargotrix",
+      "client": null,
+      "role": "Full-stack developer",
+      "timeline": null,
+      "team": null,
+      "status_label": "Live",
+      "status_tone": "success",
+      "facts": {
+        "overview": "A delivery platform with merchant and rider workflows, shipment tracking, scheduled pickups, and cash-on-delivery management."
+      },
+      "modules": [],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": "Cargotrix — Delivery Management",
+      "seo_description": "A delivery platform with merchant and rider workflows, shipment tracking, scheduled pickups, and cash-on-delivery management.",
+      "sort_order": 1,
+      "created_at": "2026-10-06T10:00:01.000000Z",
+      "updated_at": "2026-10-06T10:00:01.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 11,
+      "title": "DoShop — Multi-Vendor Marketplace",
+      "slug": "doshop",
+      "tagline": "A storefront connecting vendors and shoppers.",
+      "description": "A multi-vendor ecommerce platform with a public storefront, product browsing, vendor management, and administration.",
+      "badge_label": "Live",
+      "badge_tone": "success",
+      "category": "saas",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/doshop-shop-live-20261006.jpg",
+      "gallery": null,
+      "tech_stack": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "JavaScript"
+      ],
+      "badges": [
+        {
+          "tone": "success",
+          "label": "Live website"
+        }
+      ],
+      "demo_url": "https://doshop.xevrilon.me",
+      "github_url": "https://github.com/Akbar758742/multivendor-laravel",
+      "client": null,
+      "role": "Full-stack developer",
+      "timeline": null,
+      "team": null,
+      "status_label": "Live",
+      "status_tone": "success",
+      "facts": {
+        "overview": "A multi-vendor ecommerce platform with a public storefront, product browsing, vendor management, and administration."
+      },
+      "modules": [],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": "DoShop — Multi-Vendor Marketplace",
+      "seo_description": "A multi-vendor ecommerce platform with a public storefront, product browsing, vendor management, and administration.",
+      "sort_order": 2,
+      "created_at": "2026-10-06T10:00:01.000000Z",
+      "updated_at": "2026-10-06T10:00:01.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 12,
+      "title": "SchoolHour — Education Portal",
+      "slug": "schoolhour",
+      "tagline": "Programs, admissions, faculty, and school administration.",
+      "description": "An education portal with public program and faculty pages, admissions, news, events, and staff administration.",
+      "badge_label": "Live",
+      "badge_tone": "success",
+      "category": "saas",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/schoolhour-live-20261006.jpg",
+      "gallery": null,
+      "tech_stack": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "JavaScript"
+      ],
+      "badges": [
+        {
+          "tone": "success",
+          "label": "Live website"
+        }
+      ],
+      "demo_url": "https://schoolhour.xevrilon.me",
+      "github_url": "https://github.com/Akbar758742/schoolhour",
+      "client": null,
+      "role": "Full-stack developer",
+      "timeline": null,
+      "team": null,
+      "status_label": "Live",
+      "status_tone": "success",
+      "facts": {
+        "overview": "An education portal with public program and faculty pages, admissions, news, events, and staff administration."
+      },
+      "modules": [],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": "SchoolHour — Education Portal",
+      "seo_description": "An education portal with public program and faculty pages, admissions, news, events, and staff administration.",
+      "sort_order": 3,
+      "created_at": "2026-10-06T10:00:01.000000Z",
+      "updated_at": "2026-10-06T10:00:01.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 13,
+      "title": "Air Travels — Travel Booking Platform",
+      "slug": "air-travels",
+      "tagline": "Tours, destinations, and travel booking.",
+      "description": "A travel storefront built with Next.js and a Laravel API, featuring tours, destinations, booking workflows, and content administration.",
+      "badge_label": "Live",
+      "badge_tone": "success",
+      "category": "saas",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/air-travels-live-20261006.jpg",
+      "gallery": null,
+      "tech_stack": [
+        "Next.js",
+        "React",
+        "Laravel",
+        "MySQL"
+      ],
+      "badges": [
+        {
+          "tone": "success",
+          "label": "Live website"
+        }
+      ],
+      "demo_url": "https://airtravels.xevrilon.me",
+      "github_url": "https://github.com/Akbar758742/air-travels",
+      "client": null,
+      "role": "Full-stack developer",
+      "timeline": null,
+      "team": null,
+      "status_label": "Live",
+      "status_tone": "success",
+      "facts": {
+        "overview": "A travel storefront built with Next.js and a Laravel API, featuring tours, destinations, booking workflows, and content administration."
+      },
+      "modules": [],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": "Air Travels — Travel Booking Platform",
+      "seo_description": "A travel storefront built with Next.js and a Laravel API, featuring tours, destinations, booking workflows, and content administration.",
+      "sort_order": 4,
+      "created_at": "2026-10-06T10:00:01.000000Z",
+      "updated_at": "2026-10-06T10:00:01.000000Z",
+      "deleted_at": null
+    },
+    {
+      "id": 14,
+      "title": "Akbar Portfolio — Developer Showcase",
+      "slug": "portfolio-akbar",
+      "tagline": "Projects, case studies, and developer experience.",
+      "description": "A Laravel portfolio with managed projects, case studies, services, blog content, and a developer profile.",
+      "badge_label": "Live",
+      "badge_tone": "success",
+      "category": "saas",
+      "featured": true,
+      "is_active": true,
+      "image": "/uploads/portfolio/portfolio-akbar-live-20261006.jpg",
+      "gallery": null,
+      "tech_stack": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Bootstrap"
+      ],
+      "badges": [
+        {
+          "tone": "success",
+          "label": "Live website"
+        }
+      ],
+      "demo_url": "https://xevrilon.me",
+      "github_url": "https://github.com/Akbar758742/portfolio-akbar",
+      "client": null,
+      "role": "Full-stack developer",
+      "timeline": null,
+      "team": null,
+      "status_label": "Live",
+      "status_tone": "success",
+      "facts": {
+        "overview": "A Laravel portfolio with managed projects, case studies, services, blog content, and a developer profile."
+      },
+      "modules": [],
+      "architecture": null,
+      "db_tables": null,
+      "api_routes": null,
+      "perf_metrics": null,
+      "security_points": null,
+      "lessons": null,
+      "future_scope": null,
+      "impact": null,
+      "seo_title": "Akbar Portfolio — Developer Showcase",
+      "seo_description": "A Laravel portfolio with managed projects, case studies, services, blog content, and a developer profile.",
+      "sort_order": 5,
+      "created_at": "2026-10-06T10:00:01.000000Z",
+      "updated_at": "2026-10-06T10:00:01.000000Z",
+      "deleted_at": null
+    },
+    {
       "id": 1,
       "title": "Sellino — Multi-Vendor Ecommerce Platform",
       "slug": "sellino-ecommerce-platform",
@@ -1253,7 +1566,7 @@
       "category": "ecommerce",
       "featured": true,
       "is_active": true,
-      "image": "/uploads/portfolio/project-ecommerce.svg",
+      "image": "/uploads/portfolio/sellino-ecommerce-platform-cover-20261006.svg",
       "gallery": [
         "/uploads/portfolio/project-ecommerce.svg"
       ],
@@ -1328,7 +1641,7 @@
       "impact": null,
       "seo_title": null,
       "seo_description": null,
-      "sort_order": 1,
+      "sort_order": 100,
       "created_at": "2026-09-13T16:08:10.000000Z",
       "updated_at": "2026-09-13T18:30:45.000000Z",
       "deleted_at": null
@@ -1344,7 +1657,7 @@
       "category": "ecommerce",
       "featured": true,
       "is_active": true,
-      "image": "/uploads/portfolio/project-ecommerce.svg",
+      "image": "/uploads/portfolio/baillows-nextjs-storefront-cover-20261006.svg",
       "gallery": [
         "/uploads/portfolio/project-ecommerce.svg"
       ],
@@ -1419,7 +1732,7 @@
       "impact": null,
       "seo_title": null,
       "seo_description": null,
-      "sort_order": 2,
+      "sort_order": 101,
       "created_at": "2026-09-13T16:08:10.000000Z",
       "updated_at": "2026-09-13T18:30:45.000000Z",
       "deleted_at": null
@@ -1435,7 +1748,7 @@
       "category": "saas",
       "featured": true,
       "is_active": true,
-      "image": "/uploads/portfolio/project-brightlms.svg",
+      "image": "/uploads/portfolio/jobnect-job-listing-platform-cover-20261006.svg",
       "gallery": null,
       "tech_stack": [
         "Laravel",
@@ -1504,7 +1817,7 @@
       "impact": null,
       "seo_title": null,
       "seo_description": null,
-      "sort_order": 3,
+      "sort_order": 102,
       "created_at": "2026-09-13T16:08:10.000000Z",
       "updated_at": "2026-09-13T18:30:45.000000Z",
       "deleted_at": null
@@ -1520,7 +1833,7 @@
       "category": "saas",
       "featured": true,
       "is_active": true,
-      "image": "/uploads/portfolio/project-medicore.svg",
+      "image": "/uploads/portfolio/feni-doctor-info-cover-20261006.svg",
       "gallery": null,
       "tech_stack": [
         "Laravel",
@@ -1589,7 +1902,7 @@
       "impact": null,
       "seo_title": null,
       "seo_description": null,
-      "sort_order": 4,
+      "sort_order": 103,
       "created_at": "2026-09-13T16:08:10.000000Z",
       "updated_at": "2026-09-13T18:30:45.000000Z",
       "deleted_at": null
@@ -1605,7 +1918,7 @@
       "category": "api",
       "featured": true,
       "is_active": true,
-      "image": "/uploads/portfolio/project-shiproute.svg",
+      "image": "/uploads/portfolio/parcelfly-delivery-management-cover-20261006.svg",
       "gallery": null,
       "tech_stack": [
         "Laravel",
@@ -1678,7 +1991,7 @@
       "impact": null,
       "seo_title": null,
       "seo_description": null,
-      "sort_order": 5,
+      "sort_order": 104,
       "created_at": "2026-09-13T16:08:10.000000Z",
       "updated_at": "2026-09-13T18:30:45.000000Z",
       "deleted_at": null
@@ -1694,7 +2007,7 @@
       "category": "saas",
       "featured": false,
       "is_active": true,
-      "image": "/uploads/portfolio/project-billstack.svg",
+      "image": "/uploads/portfolio/subsify-digital-subscription-marketplace-cover-20261006.svg",
       "gallery": null,
       "tech_stack": [
         "Laravel",
@@ -1763,7 +2076,7 @@
       "impact": null,
       "seo_title": null,
       "seo_description": null,
-      "sort_order": 6,
+      "sort_order": 105,
       "created_at": "2026-09-13T16:08:10.000000Z",
       "updated_at": "2026-09-13T18:30:45.000000Z",
       "deleted_at": null
@@ -1779,7 +2092,7 @@
       "category": "saas",
       "featured": false,
       "is_active": true,
-      "image": "/uploads/portfolio/project-brightlms.svg",
+      "image": "/uploads/portfolio/pghsf-education-portal-cover-20261006.svg",
       "gallery": null,
       "tech_stack": [
         "Laravel",
@@ -1848,7 +2161,7 @@
       "impact": null,
       "seo_title": null,
       "seo_description": null,
-      "sort_order": 7,
+      "sort_order": 106,
       "created_at": "2026-09-13T16:08:10.000000Z",
       "updated_at": "2026-09-13T18:30:45.000000Z",
       "deleted_at": null
@@ -1864,7 +2177,7 @@
       "category": "ai",
       "featured": true,
       "is_active": true,
-      "image": "/uploads/portfolio/project-ecommerce.svg",
+      "image": "/uploads/portfolio/ai-powered-multivendor-ecommerce-cover-20261006.svg",
       "gallery": [
         "/uploads/portfolio/project-ecommerce.svg"
       ],
@@ -1941,7 +2254,7 @@
       "impact": null,
       "seo_title": null,
       "seo_description": null,
-      "sort_order": 8,
+      "sort_order": 107,
       "created_at": "2026-09-13T16:08:10.000000Z",
       "updated_at": "2026-09-13T18:30:45.000000Z",
       "deleted_at": null
