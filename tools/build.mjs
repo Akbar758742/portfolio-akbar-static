@@ -241,7 +241,7 @@ function head({ root, title, description, canonicalPath }) {
   <meta property="og:url" content="${esc(url)}">
   <meta name="twitter:card" content="summary">
 
-  <link rel="icon" href="${root}assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="${root}assets/icons/favicon.svg?v=20261020" type="image/svg+xml">
 
   <script>document.documentElement.classList.add("js");</script>
 
